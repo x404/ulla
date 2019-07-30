@@ -3703,6 +3703,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  color: #000;
   font-size: 16px;
   font-family: 'Fira Sans Condensed', sans-serif; }
 
@@ -3730,8 +3731,8 @@ input::-moz-focus-inner {
     height: auto;
     min-height: 100vh;
     display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: auto 1fr auto; }
+    grid-template-areas: "top" "header" "main" "footer";
+    grid-template-rows: auto auto 1fr auto; }
   @media (min-width: 992px) {
     .grid-lg-2 {
       grid-template-columns: repeat(2, 1fr);
@@ -3773,7 +3774,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .title:before, .title:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3788,12 +3789,14 @@ h3 {
   .top__left {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif; }
-  .top .social-icon {
-    filter: brightness(5) invert(1) grayscale(1);
-    margin: 0 5px;
-    transition: filter .3s; }
-    .top .social-icon:hover {
-      filter: none; }
+
+.social-icon {
+  filter: brightness(5) invert(1) grayscale(1);
+  margin: 0 5px;
+  transition: filter .3s; }
+  .social-icon:hover {
+    filter: none;
+    text-decoration: none; }
 
 /* =header
 ---------------------------*/
@@ -3820,6 +3823,8 @@ h3 {
   font-weight: bold; }
   .navmenu .nav a:hover {
     text-decoration: none; }
+  .navmenu .nav .menu-item ul {
+    box-shadow: 2px 3px 7px rgba(53, 73, 92, 0.32); }
   .navmenu .nav > li {
     margin: 0 20px;
     position: relative; }
@@ -3829,11 +3834,12 @@ h3 {
       display: block;
       padding: 20px 0; }
       .navmenu .nav > li > a:hover {
-        border-bottom-color: #ff9baa;
         color: #9da5aa; }
     .navmenu .nav > li.current-menu-item > a {
       border-bottom-color: #ff9baa;
       color: #9da5aa; }
+    .navmenu .nav > li:hover > a {
+      border-bottom-color: #ff9baa; }
     .navmenu .nav > li:hover .submenu {
       opacity: 1;
       z-index: 1; }
@@ -3842,13 +3848,14 @@ h3 {
     border-top: 1px solid #000;
     left: 0;
     margin-left: -75px;
-    padding: 18px;
     position: absolute;
-    top: 68px;
+    top: 69px;
     width: 215px;
     opacity: 0;
     transition: opacity .3s;
     z-index: -1; }
+    .navmenu .nav .submenu ul {
+      padding: 18px; }
     .navmenu .nav .submenu li {
       margin: 5px 0; }
       .navmenu .nav .submenu li:first-child {
@@ -3860,18 +3867,82 @@ h3 {
 ---------------------------*/
 /* =main
 ---------------------------*/
+.title {
+  color: #000;
+  font-size: 34px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase; }
+  .title:before, .title:after {
+    border-top: 1px solid #000;
+    width: 82px;
+    left: 50%;
+    margin-left: -41px; }
+  .title:before {
+    top: 0; }
+  .title:after {
+    bottom: 0; }
+
 .tab-content > .tab-pane {
   display: none; }
 
 .tab-content > .active {
   display: block; }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0); }
+.footer .logo {
+  margin-top: 70px; }
+
+.footer .social {
+  margin-top: 30px; }
+
+.footer .bottom-menu {
+  font-size: 16px;
+  margin-top: 45px; }
+  .footer .bottom-menu .menu-title {
+    font-size: 17px; }
+  .footer .bottom-menu ul {
+    margin-top: 30px; }
+    .footer .bottom-menu ul li {
+      margin: 5px 0; }
+  .footer .bottom-menu a {
+    text-decoration: underline; }
+    .footer .bottom-menu a:hover {
+      color: #ff9baa;
+      text-decoration: none; }
+
+.subscribe {
+  background-color: #9da5aa;
+  margin-top: 45px;
+  padding: 70px 0 40px; }
+  .subscribe header {
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .subscribe .title {
+    margin-bottom: 50px;
+    text-transform: uppercase; }
+  .subscribe .mc4wp-form-fields {
+    display: flex;
+    justify-content: center; }
+    .subscribe .mc4wp-form-fields .form-control {
+      width: 556px;
+      height: 58px;
+      border: 1px solid #ff9baa;
+      background-color: #ffffff;
+      padding: 0 25px;
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      border: 1px solid rgba(0, 0, 0, 0);
+      margin-right: 20px; }
+    .subscribe .mc4wp-form-fields .submit {
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      height: 58px;
+      text-transform: uppercase;
+      width: 205px;
+      font-family: 'Open Sans', sans-serif; }
 
 /* fira-sans-condensed-regular - cyrillic_cyrillic-ext */
 @font-face {

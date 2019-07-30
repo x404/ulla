@@ -1,17 +1,105 @@
-@font-face {
-	font-family: 'Avanti';
-	src: local('Avanti'),
-		 url('../fonts/Avanti/Avanti.woff2') format('woff2'),
-		 url('../fonts/Avanti/Avanti.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
+/* fira-sans-condensed-regular - cyrillic_cyrillic-ext */
+// https://google-webfonts-helper.herokuapp.com/fonts/fira-sans-condensed?subsets=cyrillic-ext,cyrillic
+
+// font-family: 'Fira Sans Condensed', sans-serif;
+
 
 @font-face {
-	font-family: 'Avanti';
-	src: local('Avanti Bold'), local('Avanti-Bold'),
-		 url('../fonts/Avanti/Avanti-Bold.woff2') format('woff2'),
-		 url('../fonts/Avanti/Avanti-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Condensed Regular'), local('FiraSansCondensed-Regular'),
+	   url('fonts/FiraSansCondensed/fira-sans-condensed-v2-cyrillic_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('fonts/FiraSansCondensed/fira-sans-condensed-v2-cyrillic_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	font-display: swap;
 }
+
+
+// /* fira-sans-condensed-500 - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Fira Sans Condensed';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: local('Fira Sans Condensed Medium'), local('FiraSansCondensed-Medium'),
+//        url('fonts/FiraSansCondensed/fira-sans-condensed-v2-cyrillic_cyrillic-ext-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/FiraSansCondensed/fira-sans-condensed-v2-cyrillic_cyrillic-ext-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+
+// /* fira-sans-condensed-600 - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Fira Sans Condensed';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: local('Fira Sans Condensed SemiBold'), local('FiraSansCondensed-SemiBold'),
+//        url('fonts/FiraSansCondensed/fira-sans-condensed-v2-cyrillic_cyrillic-ext-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/FiraSansCondensed/fira-sans-condensed-v2-cyrillic_cyrillic-ext-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+
+
+
+/* open-sans-regular - cyrillic_cyrillic-ext */
+// font-family: 'Open Sans', sans-serif;
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+	   url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	font-display: swap;
+}
+/* open-sans-italic - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: italic;
+//   font-weight: 400;
+//   src: local('Open Sans Italic'), local('OpenSans-Italic'),
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+// /* open-sans-600 - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+// /* open-sans-600italic - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: italic;
+//   font-weight: 600;
+//   src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'),
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+// /* open-sans-700 - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Open Sans Bold'), local('OpenSans-Bold'),
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+// /* open-sans-700italic - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: italic;
+//   font-weight: 700;
+//   src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+// /* open-sans-800 - cyrillic_cyrillic-ext */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 800;
+//   src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }

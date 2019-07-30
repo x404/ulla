@@ -3812,6 +3812,50 @@ h3 {
 ---------------------------*/
 /* =navigation
 ---------------------------*/
+.navmenu .nav {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 400;
+  font-weight: bold; }
+  .navmenu .nav a:hover {
+    text-decoration: none; }
+  .navmenu .nav > li {
+    margin: 0 20px;
+    position: relative; }
+    .navmenu .nav > li > a {
+      border-bottom: 4px solid rgba(0, 0, 0, 0);
+      text-transform: uppercase;
+      display: block;
+      padding: 20px 0; }
+      .navmenu .nav > li > a:hover {
+        border-bottom-color: #ff9baa;
+        color: #9da5aa; }
+    .navmenu .nav > li.current-menu-item > a {
+      border-bottom-color: #ff9baa;
+      color: #9da5aa; }
+    .navmenu .nav > li:hover .submenu {
+      opacity: 1;
+      z-index: 1; }
+  .navmenu .nav .submenu {
+    background-color: #fff;
+    border-top: 1px solid #000;
+    left: 0;
+    margin-left: -75px;
+    padding: 18px;
+    position: absolute;
+    top: 68px;
+    width: 215px;
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: -1; }
+    .navmenu .nav .submenu li {
+      margin: 5px 0; }
+      .navmenu .nav .submenu li:first-child {
+        margin-top: 0; }
+      .navmenu .nav .submenu li a:hover {
+        color: #ff9baa; }
+
 /* =/navigation
 ---------------------------*/
 /* =main

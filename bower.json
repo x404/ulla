@@ -1,0 +1,22 @@
+{
+  "name": "abmene",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "x404"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/x404/autoservice",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0"
+  }
+}

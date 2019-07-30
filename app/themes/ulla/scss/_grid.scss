@@ -1,0 +1,73 @@
+.container{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+[class*="grid-"]{
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+}
+
+
+@media (max-width: 767px) {
+	.container{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container{
+		width: 730px;
+	}
+
+}
+@media (min-width: 992px) {
+	.container {
+		width: 940px;
+	}
+}
+
+@media (min-width: 1150px) {
+	.container {
+		// width: 1050px;
+	}
+}
+
+
+@media (min-width: 1199px) {
+	.container {
+		width: 1100px;
+	}
+}
+
+
+@media (min-width: 1400px) {
+	.container {
+		width: 1260px;
+	}
+}
+
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+	  	.d#{$infix}-grid{
+	  		display: grid
+	  	}
+  }
+}
+
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+	@for $i from 1 through 12{
+	  	.grid#{$infix}-#{$i}{
+			grid-template-columns: repeat(#{$i}, 1fr);  		
+			
+	  	}
+	}
+  }
+}

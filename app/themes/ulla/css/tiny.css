@@ -1,0 +1,29 @@
+.text-center{
+        text-align: center;
+}
+.justifyleft {text-align:left !important; }
+.justifyright {text-align:right !important; }
+.justifycenter {text-align: center !important; }
+.justifyfull {text-align:justify !important; }
+
+img.justifyleft, table.justifyleft {float:left; margin-right:10px;margin-bottom:5px;}
+img.justifyright, table.justifyright {float:right; margin-left:10px;margin-bottom:5px;}
+img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
+
+table{
+	margin: 20px 0;
+}
+.table-bordered td, .table-bordered th{
+	border: 1px solid #dee2e6;
+	padding: 5px 10px
+}
+
+th{
+	font-size: 12px;
+	font-weight: 400;
+}
+
+
+p{
+	margin: 0;
+}

@@ -1,0 +1,214 @@
+/*** reset ***********/
+html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+header, section, footer, aside, nav, article {display:block}
+ul{list-style:none}
+$color1:#000;
+$color2:#fff;
+
+$color3:#f4f4f4;
+$color4:#1a237e;
+$color5:#666;
+$color6:#ff5722;
+$color7:#80bbde;
+$color8:#292929;
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:after,
+	&:before{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}
+}
+
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%
+}
+
+
+body{
+	@include font-size(1.4);
+	font-display: swap;
+	// height: 100vh;
+}
+
+html, body{
+	height: 100%
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	//ie11
+}
+
+
+
+input::-moz-focus-inner{
+	border: 0;
+	padding: 0;
+}
+
+
+.d-grid{
+	display: flex;
+}
+
+.main-grid{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.main{
+		flex-grow: 1;
+	}		
+}
+
+@supports (display:grid) {
+	.d-grid{
+		display: grid;
+	}
+	.main-grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-rows: auto 1fr auto;
+	}
+
+
+	@media (min-width: 992px){
+		.grid-lg-2{
+			grid-template-columns: repeat(2, 1fr);
+			grid-row-gap: 30px;
+		}	
+		.grid-lg-3{
+			grid-template-columns: repeat(3, 1fr);
+			grid-row-gap: 30px;
+		}		
+		.d-lg-grid{
+			display: grid !important;
+		}
+	}
+	@media (min-width: 1250px){
+		.grid-xl-6{
+			grid-template-columns: repeat(6, 1fr)
+		}		
+	}
+}
+
+
+
+.outerwrapper{
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+/*** standart classes *****/
+p{}
+a{color:#020000; transition: .3s}
+h1{font-size:2.5rem}
+h2{font-size:2.4rem}
+h3{font-size:1.6rem}
+
+.regular{
+	font-family: "SegoeUIRegular";	
+}
+
+
+
+strong,
+.bold{
+	font-weight: normal;
+	font-family: "SegoeUIBold";
+}
+em, i, 
+.italic{
+	font-style: normal;
+	font-family: "SegoeUIItalic";
+}
+
+strong em,
+em strong
+{
+	font-weight: normal;
+	font-family: "SegoeUIBoldItalic";
+}
+
+
+.tdn{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.tdu{
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+
+.before{
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+
+.form-control {
+
+}
+
+
+
+/* =header
+---------------------------*/
+header{
+}
+
+/* =/header
+---------------------------*/
+
+
+
+/* =navigation
+---------------------------*/
+/* =/navigation
+---------------------------*/
+
+
+/* =main
+---------------------------*/
+
+.main{
+	aside{
+	}
+}
+
+
+.tab-content {
+	> .tab-pane {
+		display: none;
+	}
+	> .active {
+		display: block;
+	}
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}

@@ -36,7 +36,7 @@ gulp.task('scss', function(){
 
 // сжатие css файла
 gulp.task('css-libs', ['scss'],  function(){
-	return gulp.src(config.templateDir + '/styles.css') // Выбираем файл для минификации
+	return gulp.src(config.templateDir + '/style.css') // Выбираем файл для минификации
 		.pipe(cleancss())  // Сжимаем
 		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
 		.pipe(gulp.dest(config.templateDir + '/')) // Выгружаем в папку app/css
@@ -222,7 +222,7 @@ gulp.task('check-for-favicon-update', function(done) {
 gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	// переносим css файлы
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
-		config.templateDir + '/styles.min.css'
+		config.templateDir + '/style.min.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/themes/ulla'));
 

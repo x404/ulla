@@ -123,3 +123,61 @@
 		}
 	}
 }
+
+
+
+.rubrics{
+	margin-top: 50px;
+	&__list{
+
+	}
+
+	&__item{
+		margin-top: 16px;
+	}
+}
+
+.item-rubrics{
+	&__list{}	
+	&__link{
+		display: inline-block;
+		position: relative;
+		&:before{
+			@extend .before;
+			background-color: rgba(157,165,170,.55);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+			transition: opacity .3s;
+		}
+
+		&:hover{
+			&:before{
+				opacity: 0;				
+			}
+
+			.item-rubrics{
+				&__title{
+					top: 85%;
+				}
+			}
+		}
+	}	
+
+	&__title{
+		color: #fff;
+		font-family: 'Fira Sans Condensed', sans-serif;
+		font-size: 30px;
+		font-weight: normal;
+		left: 50%;
+		position: absolute;
+		text-transform: uppercase;
+		top: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		transition: top .6s;
+		transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+}

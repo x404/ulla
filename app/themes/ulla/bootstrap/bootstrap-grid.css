@@ -33,7 +33,7 @@ html {
       max-width: 960px; } }
   @media (min-width: 1250px) {
     .container {
-      max-width: 1530px; } }
+      max-width: 1200px; } }
 
 .container-fluid {
   width: 100%;

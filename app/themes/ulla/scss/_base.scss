@@ -442,26 +442,36 @@ h3{font-size:1.6rem}
 		justify-content: center;
 		$h: 58px;
 		.form-control{
-			width: 556px;
-			height: $h;
-			border: 1px solid $color3;
 			background-color: #ffffff;
-			padding: 0 25px;
-			font-size: 16px;
-			font-family: 'Open Sans', sans-serif;
 			border: 1px solid rgba(0,0,0,0);
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+			height: $h;
 			margin-right: 20px;
+			padding: 0 25px;
+			transition: border-color .3s;
+			width: 556px;
+			&:focus,
+			&:hover{
+				border-color: $color3;
+			}
 		}
 
 		.submit{
-			background-color: #ffffff;
-			border: none;
+			background-color: #fff;
+			border: 1px solid #fff;
 			cursor: pointer;
+			font-family: 'Open Sans', sans-serif;
 			font-size: 18px;
 			height: $h;
 			text-transform: uppercase;
 			width: 205px;
-			font-family: 'Open Sans', sans-serif;
+			transition: .3s;
+			&:hover{
+				color: #fff;
+				border-color: #fff;
+				background-color: transparent;
+			}
 		}
 	}
 }

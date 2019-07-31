@@ -3973,24 +3973,31 @@ h3 {
     display: flex;
     justify-content: center; }
     .subscribe .mc4wp-form-fields .form-control {
-      width: 556px;
-      height: 58px;
-      border: 1px solid #ff9baa;
       background-color: #ffffff;
-      padding: 0 25px;
-      font-size: 16px;
-      font-family: 'Open Sans', sans-serif;
       border: 1px solid rgba(0, 0, 0, 0);
-      margin-right: 20px; }
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      height: 58px;
+      margin-right: 20px;
+      padding: 0 25px;
+      transition: border-color .3s;
+      width: 556px; }
+      .subscribe .mc4wp-form-fields .form-control:focus, .subscribe .mc4wp-form-fields .form-control:hover {
+        border-color: #ff9baa; }
     .subscribe .mc4wp-form-fields .submit {
-      background-color: #ffffff;
-      border: none;
+      background-color: #fff;
+      border: 1px solid #fff;
       cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       height: 58px;
       text-transform: uppercase;
       width: 205px;
-      font-family: 'Open Sans', sans-serif; }
+      transition: .3s; }
+      .subscribe .mc4wp-form-fields .submit:hover {
+        color: #fff;
+        border-color: #fff;
+        background-color: transparent; }
 
 /* =subscribe
 ---------------------------*/

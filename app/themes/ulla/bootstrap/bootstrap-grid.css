@@ -18,8 +18,8 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -37,16 +37,16 @@ html {
 
 .container-fluid {
   width: 100%;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -8px;
-  margin-left: -8px; }
+  margin-right: -16px;
+  margin-left: -16px; }
 
 .no-gutters {
   margin-right: 0;
@@ -65,8 +65,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 8px;
-  padding-left: 8px; }
+  padding-right: 16px;
+  padding-left: 16px; }
 
 .col {
   flex-basis: 0;

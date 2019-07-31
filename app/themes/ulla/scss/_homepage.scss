@@ -127,13 +127,18 @@
 
 
 .rubrics{
-	margin-top: 50px;
+	margin-top: 70px;
+	margin-bottom: -28px;
 	&__list{
 
 	}
 
 	&__item{
-		margin-top: 16px;
+		margin-bottom: 28px;
+	}
+
+	.title{
+		margin-bottom: 45px;
 	}
 }
 
@@ -162,6 +167,10 @@
 					top: 85%;
 				}
 			}
+		}
+
+		img{
+			max-width: 100%;
 		}
 	}	
 

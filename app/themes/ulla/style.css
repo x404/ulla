@@ -3885,6 +3885,8 @@ h3 {
   .seo-text .title {
     margin-bottom: 10px; }
 
+/* =text
+---------------------------*/
 .text {
   font-family: 'Open Sans', sans-serif; }
   .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
@@ -3906,12 +3908,22 @@ h3 {
     line-height: 1.5;
     margin: 25px 0; }
 
+/* =/text
+---------------------------*/
 .tab-content > .tab-pane {
   display: none; }
 
 .tab-content > .active {
   display: block; }
 
+.visual {
+  margin: 70px 0;
+  font-size: 18px; }
+  .visual img {
+    max-width: 100%; }
+
+/* =footer
+---------------------------*/
 .footer__bottom {
   padding: 45px 30px; }
 
@@ -3941,6 +3953,10 @@ h3 {
       color: #ff9baa;
       text-decoration: none; }
 
+/* =footer
+---------------------------*/
+/* =subscribe
+---------------------------*/
 .subscribe {
   background-color: #9da5aa;
   margin-top: 50px;
@@ -3976,6 +3992,8 @@ h3 {
       width: 205px;
       font-family: 'Open Sans', sans-serif; }
 
+/* =subscribe
+---------------------------*/
 .copyright {
   font-family: 'Open Sans', sans-serif;
   flex-grow: 1;

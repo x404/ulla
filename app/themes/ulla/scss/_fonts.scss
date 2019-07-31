@@ -77,14 +77,15 @@
 //        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 // }
 // /* open-sans-700 - cyrillic_cyrillic-ext */
-// @font-face {
-//   font-family: 'Open Sans';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: local('Open Sans Bold'), local('OpenSans-Bold'),
-//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//        url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/OpenSans/open-sans-v15-cyrillic_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	font-display: swap;
+}
 // /* open-sans-700italic - cyrillic_cyrillic-ext */
 // @font-face {
 //   font-family: 'Open Sans';

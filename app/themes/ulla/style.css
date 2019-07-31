@@ -3769,9 +3769,9 @@ h3 {
   .tdn:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .creators a {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .creators a:hover {
     text-decoration: none; }
 
 .before, .title:before, .title:after {
@@ -3870,7 +3870,7 @@ h3 {
 .title {
   color: #000;
   font-size: 34px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   position: relative;
   text-align: center;
   text-transform: uppercase; }
@@ -3884,11 +3884,20 @@ h3 {
   .title:after {
     bottom: 0; }
 
+.seo-text {
+  margin: 70px 0 50px; }
+
+.text p {
+  margin: 20px 0; }
+
 .tab-content > .tab-pane {
   display: none; }
 
 .tab-content > .active {
   display: block; }
+
+.footer__bottom {
+  padding: 40px 30px; }
 
 .footer .logo {
   margin-top: 70px; }
@@ -3902,6 +3911,7 @@ h3 {
   .footer .bottom-menu .menu-title {
     font-size: 17px; }
   .footer .bottom-menu ul {
+    font-family: 'Open Sans', sans-serif;
     margin-top: 30px; }
     .footer .bottom-menu ul li {
       margin: 5px 0; }
@@ -3918,6 +3928,8 @@ h3 {
   .subscribe header {
     font-size: 18px;
     margin-bottom: 25px; }
+    .subscribe header p {
+      font-size: 18px; }
   .subscribe .title {
     margin-bottom: 50px;
     text-transform: uppercase; }
@@ -3943,6 +3955,16 @@ h3 {
       text-transform: uppercase;
       width: 205px;
       font-family: 'Open Sans', sans-serif; }
+
+.copyright {
+  font-family: 'Open Sans', sans-serif;
+  flex-grow: 1;
+  font-size: 14px;
+  padding-left: 300px; }
+
+.creators {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif; }
 
 /* fira-sans-condensed-regular - cyrillic_cyrillic-ext */
 @font-face {

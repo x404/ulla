@@ -4149,7 +4149,8 @@ h3 {
     left: 0;
     right: 0;
     top: 0;
-    transition: opacity .3s; }
+    transition: opacity .3s;
+    z-index: 2; }
   .item-rubrics__link:hover:before {
     opacity: 0; }
   .item-rubrics__link:hover .item-rubrics__title {
@@ -4597,20 +4598,45 @@ h3 {
       font-size: 16px; }
     .text h6 {
       font-size: 15px; }
-  .footer .bottom-menu ul {
-    margin-top: 6px; }
-  .footer .bottom-menu .menu-title {
-    font-weight: bold; }
-  .footer .bottom-menu .cell {
-    margin-bottom: 25px; }
-    .footer .bottom-menu .cell:last-child {
-      margin-bottom: 0; }
+  .footer .bottom-menu {
+    padding-left: 0;
+    padding-right: 0; }
+    .footer .bottom-menu ul {
+      margin-top: 6px; }
+    .footer .bottom-menu .menu-title {
+      font-weight: bold; }
+    .footer .bottom-menu .cell {
+      margin-bottom: 25px; }
+      .footer .bottom-menu .cell:last-child {
+        margin-bottom: 0; }
   .footer__bottom {
     padding-top: 20px;
     padding-bottom: 20px; }
+  .footer .logo {
+    margin-top: 5px; }
+  .footer .social {
+    margin-top: 20px; }
   .copyright {
     padding-left: 0;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .subscribe {
+    padding: 40px 0 30px; }
+    .subscribe .title {
+      margin-bottom: 0; }
+    .subscribe .mc4wp-form-fields {
+      display: block; }
+      .subscribe .mc4wp-form-fields .form-control {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px; }
+      .subscribe .mc4wp-form-fields .submit {
+        margin-left: auto;
+        margin-right: auto; } }
 
 @media (max-width: 860px) {
   .navmenu .nav {
@@ -4618,30 +4644,48 @@ h3 {
     .navmenu .nav > li {
       margin: 0 10px; }
     .navmenu .nav .submenu {
-      top: 68px; }
-  .subscribe .mc4wp-form-fields {
-    display: block; }
-    .subscribe .mc4wp-form-fields .form-control {
-      display: block;
-      margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      width: 80%; }
-    .subscribe .mc4wp-form-fields .submit {
-      margin-left: auto;
-      margin-right: auto; } }
+      top: 68px; } }
 
 @media (max-width: 767px) {
+  body {
+    font-size: 14px; }
   .top {
     display: none; }
+  .title {
+    font-size: 28px;
+    line-height: 1.2;
+    padding: 7px 0; }
   .header {
     padding: 20px 0 10px; }
     .header .custom-logo-link {
       display: block;
       width: 250px; }
       .header .custom-logo-link img {
-        max-width: 100%; } }
+        max-width: 100%; }
+  .seo-text {
+    margin-top: 40px;
+    margin-bottom: 10px; }
+  .subscribe .mc4wp-form-fields .form-control {
+    font-size: 14px; } }
+
+@media (max-width: 575px) {
+  .header .text {
+    display: none; }
+  .subscribe .header .annotation {
+    display: none; }
+  .subscribe .mc4wp-form-fields .form-control {
+    width: 100%; }
+  .footer .bottom-menu {
+    font-size: 15px; } }
+
+@media (max-width: 450px) {
+  .header {
+    display: block !important; }
+    .header .custom-logo-link {
+      margin-left: 20px;
+      width: 150px; }
+  .subscribe {
+    padding-top: 20px; } }
 
 @media (max-width: 1540px) {
   .item-rubrics__link {
@@ -4748,10 +4792,56 @@ h3 {
     margin-bottom: 40px; }
   .visual,
   .collections {
-    margin: 40px 0; }
-  .footer .logo {
-    margin-top: 5px; }
-  .footer .social {
-    margin-top: 20px; }
-  .subscribe {
-    padding: 40px 0 30px; } }
+    margin: 40px 0; } }
+
+@media (max-width: 575px) {
+  .main-grid {
+    display: block; }
+  .rubrics__list {
+    display: block; }
+  .item-rubrics {
+    text-align: center; }
+    .item-rubrics__link {
+      height: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 285px; }
+      .item-rubrics__link img {
+        height: 100%;
+        max-height: none;
+        max-width: none;
+        width: auto; }
+  .main {
+    overflow: hidden; } }
+
+@media (max-width: 460px) {
+  .rubrics__item {
+    margin-bottom: 20px; }
+  .item-collections__wrap:hover .item-collections__description {
+    left: 33px; }
+  .item-collections__wrap:hover .item-collections__subcats {
+    opacity: 1; }
+  .item-collections__description {
+    left: 0;
+    top: 40%;
+    transform: translateY(0%); }
+  .item-collections__title {
+    font-size: 26px;
+    text-align: center; }
+  .item-collections__text {
+    display: none; }
+  .item-collections__subcats {
+    padding-left: 30px;
+    right: 0;
+    transform: translateX(185px);
+    width: 170px; }
+    .item-collections__subcats li {
+      margin: 4px 0; }
+    .item-collections__subcats a {
+      font-size: 14px;
+      transform: translateX(0); }
+      .item-collections__subcats a:hover {
+        transform: translateX(-3px); }
+  .copyright,
+  .creators {
+    font-size: 13px; } }

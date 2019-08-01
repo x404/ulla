@@ -181,18 +181,94 @@
 	.collections{
 		margin: 40px 0;
 	}
+}
 
-	.footer{
-		.logo{
-			margin-top: 5px;
+
+@media (max-width: 575px){
+	.main-grid{
+		display: block;
+	}
+	.rubrics__list{
+		display: block;
+	}
+
+	.item-rubrics{
+		text-align: center;
+		&__link{
+			height: 390px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 285px;
+			img{
+				height: 100%;
+				max-height: none;
+				max-width: none;
+				width: auto;
+			}
 		}
-		.social{
-			margin-top: 20px;
+
+	}
+
+	.main{
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 460px){
+	.rubrics__item{
+		margin-bottom: 20px;
+	}
+
+	.item-collections{
+		&__wrap{
+			&:hover{
+				.item-collections{
+					&__description{
+						left: 33px;
+					}
+					&__subcats{
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&__description{
+			left: 0;
+			top: 40%;
+			transform: translateY(0%);
+		}
+
+		&__title{
+			font-size: 26px;
+			text-align: center;
+
+		}
+
+		&__text{
+			display: none;
+		}
+		&__subcats{
+			padding-left: 30px;
+			right: 0;
+			transform: translateX(185px);
+			width: 170px;
+			li{
+				margin: 4px 0;
+			}
+			a{
+				font-size: 14px;
+				transform: translateX(0);
+				&:hover{
+					transform: translateX(-3px);
+				}
+			}
 		}
 	}
 
-	.subscribe{
-		padding: 40px 0 30px;
-		
+
+	.copyright,
+	.creators{
+		font-size: 13px;
 	}
 }

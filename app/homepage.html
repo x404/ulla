@@ -76,6 +76,11 @@
 		<div class="navmenu__inner">
 			<nav id="navbar" class="mainnav">
 				<div class="mainnav__list">
+					<div class="mob-logo show-sm">
+						<a href="/" class="custom-logo-link" title="" aria-label="На главную">
+							<img src="/themes/ulla/images/logo.png" alt="" width="150" height="42" />
+						</a>
+					</div>
 					<ul class="nav nav-tabs">
 						<li class="menu-item current-menu-item"><a href="#" title="">Главная</a></li>
 						<li class="menu-item menu-item-has-children-">
@@ -85,7 +90,7 @@
 									<li><a href="#" title="">История</a></li>
 									<li><a href="#" title="">Миссия </a></li>
 									<li><a href="#" title="">Бренды</a></li>
-									<li><a href="#" title="">Преимущества</a></li>
+									<li class="current-menu-item-"><a href="#" title="">Преимущества</a></li>
 									<li><a href="#" title="">Франчайзинг</a></li>
 									<li><a href="#" title="">Опт</a></li>
 									<li><a href="#" title="">Розница </a></li>
@@ -107,7 +112,12 @@
 					</div>
 				</div>
 			</nav>	
-			<button type="button" class="close-menu"><img src="/themes/ulla/images/close.png" alt="Закрыть меню" /></button>
+			<button type="button" class="close-menu" aria-label="Закрыть меню">
+				<svg width="19" height="19">
+					<line x1="0" y1="0" x2="19" y2="19"/>
+					<line x1="19" y1="0" x2="0" y2="19"/>
+				</svg>
+			</button>
 		</div>
 	</div>
 	<button type="button" class="navbar-toggle" aria-label="Показать/Скрыть меню">

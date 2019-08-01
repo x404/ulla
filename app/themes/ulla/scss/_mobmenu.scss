@@ -1,5 +1,5 @@
-$color_1: #fff; 
-$color_2: #0563bf;
+$color_1: #000; 
+$color_2: #fff;
 
 
 /* =mobile-menu
@@ -71,34 +71,58 @@ $color_2: #0563bf;
 				border-bottom: none !important;
 			}
 		}
-	}	
+	}
 
 	.show-sm{
 		display: block;
 		text-align: left;
 	}
 	.navbar-toggle{
-		background-color:$color_2;
+		background-color: #fff;
 		border: none;
 		cursor: pointer;
-		display: block;
-		height: 70px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 80px;
 		right: 0;
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: 70px;
+		width: 80px;
 		z-index: 99;
+		justify-content: center;
 		.icon-bar{
-			background-color: $color_1;
+			background-color: #000;
 			display: block;
-			height: 2px;
-			margin: 8px auto;
-			width: 30px;
+			height: 3px;
+			margin: 4px 0;
+			width: 35px;
+			transition: .3s;
+			&:nth-child(2){
+				margin-left: 9px;
+				width: 26px;
+			}
+		}
+		&:hover{
+			.icon-bar:nth-child(2){
+				margin-left: 0;
+				width: 35px;
+			}
+		}
+	}
+	
+	.mob-logo{
+		padding-left: 22px;
+		padding-top: 15px;
+		a{
+			margin: 0 !important;
 		}
 	}
 
+	.close-menu{
 
+	}
 
 	.o-menu{
 		.navmenu{
@@ -107,9 +131,6 @@ $color_2: #0563bf;
 			right: 0;
 		}
 
-		.close-menu{
-			display: block;
-		}
 
 		.mobinfo{
 			padding-left: 1rem;
@@ -147,19 +168,28 @@ $color_2: #0563bf;
 		border: none;
 		cursor: pointer;
 		display: block;
+
 		height: 58px;
 		padding: 0;
 		position: fixed;
-		right: 2px;
 		text-align: center;
-		top: 0;
+		top: 10px;
+		right: 10px;
 		width: 58px;
 		z-index: 99;
-		img{
-			transition: transform .2s;			
+		svg{
+			transition: transform .3s;
+			transform-origin: center center;
+			vertical-align: top;
 		}
-		&:hover img{
-			transform: rotate(90deg);
+		line{
+			stroke: #000;
+			stroke-width: 2px;
+		}
+		&:hover{
+			svg{
+				transform: rotate(90deg);
+			}
 		}
 	}
 
@@ -168,7 +198,7 @@ $color_2: #0563bf;
 		background-color:$color_2;
 		a{
 			border-bottom: none !important;
-			font-size: 18px;
+			font-size: 17px;
 			font-weight: 400;
 			&:hover{
 				text-decoration: none;
@@ -177,12 +207,17 @@ $color_2: #0563bf;
 		.container{
 			padding: 0;
 		}
+
+		.nav-tabs>li>a{
+			text-transform: uppercase !important;
+		}
+
 		ul.nav{
 			background: none;
 			display: block;
 			font-size: 15px;
-			margin-top: 0;
-			padding-left: 15px;
+			margin-top: 18px;
+			padding-left: 38px;
 			padding-right: 15px;
 			text-align: left;
 
@@ -198,7 +233,7 @@ $color_2: #0563bf;
 					display: block;
 					height: auto;
 					line-height: normal;
-					padding: 18px 0 18px 10px;
+					padding: 14px 0;
 					text-decoration: none;
 					text-transform: none;
 					&:hover{
@@ -213,7 +248,6 @@ $color_2: #0563bf;
 					a, span{
 						background: none;
 					}
-					border-bottom: 1px solid #fff;
 					color: #fff;
 				}
 
@@ -221,6 +255,35 @@ $color_2: #0563bf;
 					a{
 						&:hover{
 							color : #fff;
+						}
+					}
+				}
+			}
+		}
+
+		.submenu{
+			border: none;
+			display: block !important;
+			margin-left: 0;
+			margin-bottom: 15px;
+			opacity: 1;
+			position: static;
+			width: auto;
+			ul{
+				box-shadow: none;
+				padding: 0 0 0 25px;
+				li{
+					a,
+					span
+					{
+						font-size: 18px !important;
+						padding: 4px 0;
+					}
+
+					&.current-menu-item{
+						a,
+						span{
+							color: $color3;
 						}
 					}
 				}

@@ -4231,33 +4231,46 @@ h3 {
     display: block;
     text-align: left; }
   .navbar-toggle {
-    background-color: #0563bf;
+    background-color: #fff;
     border: none;
     cursor: pointer;
-    display: block;
-    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
     right: 0;
     position: fixed;
     text-align: center;
     top: 0;
-    width: 70px;
-    z-index: 99; }
+    width: 80px;
+    z-index: 99;
+    justify-content: center; }
     .navbar-toggle .icon-bar {
-      background-color: #fff;
+      background-color: #000;
       display: block;
-      height: 2px;
-      margin: 8px auto;
-      width: 30px; }
+      height: 3px;
+      margin: 4px 0;
+      width: 35px;
+      transition: .3s; }
+      .navbar-toggle .icon-bar:nth-child(2) {
+        margin-left: 9px;
+        width: 26px; }
+    .navbar-toggle:hover .icon-bar:nth-child(2) {
+      margin-left: 0;
+      width: 35px; }
+  .mob-logo {
+    padding-left: 22px;
+    padding-top: 15px; }
+    .mob-logo a {
+      margin: 0 !important; }
   .o-menu .navmenu {
-    background: #0563bf;
+    background: #fff;
     z-index: 500;
     right: 0; }
-  .o-menu .close-menu {
-    display: block; }
   .o-menu .mobinfo {
     padding-left: 1rem; }
     .o-menu .mobinfo a {
-      color: #fff;
+      color: #000;
       display: block;
       margin: 1.8rem;
       text-decoration: none; }
@@ -4278,7 +4291,7 @@ h3 {
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: #0563bf;
+    background-color: #fff;
     background: none;
     border: none;
     cursor: pointer;
@@ -4286,31 +4299,38 @@ h3 {
     height: 58px;
     padding: 0;
     position: fixed;
-    right: 2px;
     text-align: center;
-    top: 0;
+    top: 10px;
+    right: 10px;
     width: 58px;
     z-index: 99; }
-    .close-menu img {
-      transition: transform .2s; }
-    .close-menu:hover img {
+    .close-menu svg {
+      transition: transform .3s;
+      transform-origin: center center;
+      vertical-align: top; }
+    .close-menu line {
+      stroke: #000;
+      stroke-width: 2px; }
+    .close-menu:hover svg {
       transform: rotate(90deg); }
   #navbar {
-    background-color: #0563bf; }
+    background-color: #fff; }
     #navbar a {
       border-bottom: none !important;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 400; }
       #navbar a:hover {
         text-decoration: none; }
     #navbar .container {
       padding: 0; }
+    #navbar .nav-tabs > li > a {
+      text-transform: uppercase !important; }
     #navbar ul.nav {
       background: none;
       display: block;
       font-size: 15px;
-      margin-top: 0;
-      padding-left: 15px;
+      margin-top: 18px;
+      padding-left: 38px;
       padding-right: 15px;
       text-align: left; }
       #navbar ul.nav > li.active > a {
@@ -4319,11 +4339,11 @@ h3 {
         padding: 0;
         border-bottom: 1px solid #fff; }
         #navbar ul.nav li a, #navbar ul.nav li span {
-          color: #fff;
+          color: #000;
           display: block;
           height: auto;
           line-height: normal;
-          padding: 18px 0 18px 10px;
+          padding: 14px 0;
           text-decoration: none;
           text-transform: none; }
           #navbar ul.nav li a:hover, #navbar ul.nav li span:hover {
@@ -4331,12 +4351,29 @@ h3 {
           #navbar ul.nav li a:before, #navbar ul.nav li span:before {
             display: none !important; }
         #navbar ul.nav li.active, #navbar ul.nav li:hover {
-          border-bottom: 1px solid #fff;
           color: #fff; }
           #navbar ul.nav li.active a, #navbar ul.nav li.active span, #navbar ul.nav li:hover a, #navbar ul.nav li:hover span {
             background: none; }
         #navbar ul.nav li.active a:hover {
           color: #fff; }
+    #navbar .submenu {
+      border: none;
+      display: block !important;
+      margin-left: 0;
+      margin-bottom: 15px;
+      opacity: 1;
+      position: static;
+      width: auto; }
+      #navbar .submenu ul {
+        box-shadow: none;
+        padding: 0 0 0 25px; }
+        #navbar .submenu ul li a,
+        #navbar .submenu ul li span {
+          font-size: 18px !important;
+          padding: 4px 0; }
+        #navbar .submenu ul li.current-menu-item a,
+        #navbar .submenu ul li.current-menu-item span {
+          color: #ff9baa; }
     #navbar .nav-tabs > li {
       margin: 0; } }
 
@@ -4469,33 +4506,46 @@ h3 {
     display: block;
     text-align: left; }
   .navbar-toggle {
-    background-color: #0563bf;
+    background-color: #fff;
     border: none;
     cursor: pointer;
-    display: block;
-    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
     right: 0;
     position: fixed;
     text-align: center;
     top: 0;
-    width: 70px;
-    z-index: 99; }
+    width: 80px;
+    z-index: 99;
+    justify-content: center; }
     .navbar-toggle .icon-bar {
-      background-color: #fff;
+      background-color: #000;
       display: block;
-      height: 2px;
-      margin: 8px auto;
-      width: 30px; }
+      height: 3px;
+      margin: 4px 0;
+      width: 35px;
+      transition: .3s; }
+      .navbar-toggle .icon-bar:nth-child(2) {
+        margin-left: 9px;
+        width: 26px; }
+    .navbar-toggle:hover .icon-bar:nth-child(2) {
+      margin-left: 0;
+      width: 35px; }
+  .mob-logo {
+    padding-left: 22px;
+    padding-top: 15px; }
+    .mob-logo a {
+      margin: 0 !important; }
   .o-menu .navmenu {
-    background: #0563bf;
+    background: #fff;
     z-index: 500;
     right: 0; }
-  .o-menu .close-menu {
-    display: block; }
   .o-menu .mobinfo {
     padding-left: 1rem; }
     .o-menu .mobinfo a {
-      color: #fff;
+      color: #000;
       display: block;
       margin: 1.8rem;
       text-decoration: none; }
@@ -4516,7 +4566,7 @@ h3 {
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: #0563bf;
+    background-color: #fff;
     background: none;
     border: none;
     cursor: pointer;
@@ -4524,31 +4574,38 @@ h3 {
     height: 58px;
     padding: 0;
     position: fixed;
-    right: 2px;
     text-align: center;
-    top: 0;
+    top: 10px;
+    right: 10px;
     width: 58px;
     z-index: 99; }
-    .close-menu img {
-      transition: transform .2s; }
-    .close-menu:hover img {
+    .close-menu svg {
+      transition: transform .3s;
+      transform-origin: center center;
+      vertical-align: top; }
+    .close-menu line {
+      stroke: #000;
+      stroke-width: 2px; }
+    .close-menu:hover svg {
       transform: rotate(90deg); }
   #navbar {
-    background-color: #0563bf; }
+    background-color: #fff; }
     #navbar a {
       border-bottom: none !important;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 400; }
       #navbar a:hover {
         text-decoration: none; }
     #navbar .container {
       padding: 0; }
+    #navbar .nav-tabs > li > a {
+      text-transform: uppercase !important; }
     #navbar ul.nav {
       background: none;
       display: block;
       font-size: 15px;
-      margin-top: 0;
-      padding-left: 15px;
+      margin-top: 18px;
+      padding-left: 38px;
       padding-right: 15px;
       text-align: left; }
       #navbar ul.nav > li.active > a {
@@ -4557,11 +4614,11 @@ h3 {
         padding: 0;
         border-bottom: 1px solid #fff; }
         #navbar ul.nav li a, #navbar ul.nav li span {
-          color: #fff;
+          color: #000;
           display: block;
           height: auto;
           line-height: normal;
-          padding: 18px 0 18px 10px;
+          padding: 14px 0;
           text-decoration: none;
           text-transform: none; }
           #navbar ul.nav li a:hover, #navbar ul.nav li span:hover {
@@ -4569,12 +4626,29 @@ h3 {
           #navbar ul.nav li a:before, #navbar ul.nav li span:before {
             display: none !important; }
         #navbar ul.nav li.active, #navbar ul.nav li:hover {
-          border-bottom: 1px solid #fff;
           color: #fff; }
           #navbar ul.nav li.active a, #navbar ul.nav li.active span, #navbar ul.nav li:hover a, #navbar ul.nav li:hover span {
             background: none; }
         #navbar ul.nav li.active a:hover {
           color: #fff; }
+    #navbar .submenu {
+      border: none;
+      display: block !important;
+      margin-left: 0;
+      margin-bottom: 15px;
+      opacity: 1;
+      position: static;
+      width: auto; }
+      #navbar .submenu ul {
+        box-shadow: none;
+        padding: 0 0 0 25px; }
+        #navbar .submenu ul li a,
+        #navbar .submenu ul li span {
+          font-size: 18px !important;
+          padding: 4px 0; }
+        #navbar .submenu ul li.current-menu-item a,
+        #navbar .submenu ul li.current-menu-item span {
+          color: #ff9baa; }
     #navbar .nav-tabs > li {
       margin: 0; } }
 

@@ -5,10 +5,103 @@
 }
 
 @media (max-width: 991px){
+	.title{
+		font-size: 30px;
+	}
+	.text{
+		text-align: justify;
+		h1{
+			font-size: 30px;
+		}
+		h2{
+			font-size: 26px;
+		}
+		h3{
+			font-size: 24px;
+		}
+		h4{
+			font-size: 20px;
+		}
+		h5{
+			font-size: 16px;
+		}
+		h6{
+			font-size: 15px;
+		}
+	}
+
+	.footer{
+		.bottom-menu{
+			ul{
+				margin-top: 6px;
+			}
+			.menu-title{
+				font-weight: bold;
+			}
+			.cell{
+				margin-bottom: 25px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__bottom{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.copyright{
+		padding-left: 0;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 860px){
+	.navmenu .nav{
+		font-size: 16px;
+		&>li{
+			margin: 0 10px;
+		}
+
+		.submenu{
+			top: 68px;
+		}
+	}
+
+	.subscribe{
+		.mc4wp-form-fields{
+			display: block;
+			.form-control{
+				display: block;
+				margin-bottom: 10px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				width: 80%;
+			}
+			.submit{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
 }
 
 @media (max-width: 767px){
-}
+	.top{
+		display: none;
+	}
 
-@media (max-width: 545px){
+	.header{
+		padding: 20px 0 10px;
+		.custom-logo-link{
+			display: block;
+			width: 250px;
+			img{
+				max-width: 100%
+			}
+		}
+	}
 }

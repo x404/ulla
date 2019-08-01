@@ -409,6 +409,13 @@ h3{font-size:1.6rem}
 				color: $color3;
 				text-decoration: none;
 			}
+
+			&.tel{
+				text-decoration: none;
+				&:hover{
+					color: #000;
+				}
+			}
 		}
 	}
 }
@@ -448,6 +455,7 @@ h3{font-size:1.6rem}
 			padding: 0 25px;
 			transition: border-color .3s;
 			width: 556px;
+			outline: none;
 			&:focus,
 			&:hover{
 				border-color: $color3;
@@ -458,6 +466,7 @@ h3{font-size:1.6rem}
 			background-color: #fff;
 			border: 1px solid #fff;
 			cursor: pointer;
+			display: block;
 			font-family: 'Open Sans', sans-serif;
 			font-size: 18px;
 			height: $h;

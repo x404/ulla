@@ -181,6 +181,18 @@
 	.collections{
 		margin: 40px 0;
 	}
+
+
+	.collections__list {
+		display: block;
+	}
+
+	.item-collections{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 }
 
 

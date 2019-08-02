@@ -56,14 +56,14 @@ gulp.task('compress', function(){
 	pump([
 			gulp.src([  // Берем все необходимые библиотеки
 				config.libsDir + '/jquery/dist/jquery.js',
-				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
-				config.templateDir + '/js/util.js',
-				config.templateDir + '/js/tab.js',
-				config.templateDir + '/js/modal.js',
-				config.templateDir + '/js/popper.min.js',
-				config.templateDir + '/js/jquery.fancybox.min.js',
-				config.templateDir + '/js/collapse.js',
-				config.templateDir + '/js/slick.min.js'
+				// config.libsDir + '/jquery-validation/dist/jquery.validate.js',
+				// config.templateDir + '/js/util.js',
+				// config.templateDir + '/js/tab.js',
+				// config.templateDir + '/js/modal.js',
+				// config.templateDir + '/js/popper.min.js',
+				// config.templateDir + '/js/jquery.fancybox.min.js',
+				// config.templateDir + '/js/collapse.js',
+				// config.templateDir + '/js/slick.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимаем JS файл
@@ -222,32 +222,42 @@ gulp.task('check-for-favicon-update', function(done) {
 gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	// переносим css файлы
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
-		config.templateDir + '/style.min.css'
+		config.templateDir + '/style.min.css',
+		config.templateDir + '/style.css',
 	])
 	.pipe(gulp.dest(config.destDir + '/themes/ulla'));
 
-	var buildCss2= gulp.src([ // Переносим CSS стили в продакшен
-		config.templateDir + '/css/selectize.css'
-	])
-	.pipe(gulp.dest(config.destDir + '/themes/ulla/css'));
+	// var buildCss2= gulp.src([ // Переносим CSS стили в продакшен
+	// 	config.templateDir + '/css/selectize.css'
+	// ])
+	// .pipe(gulp.dest(config.destDir + '/themes/ulla/css'));
 
 
-	var buildPHP= gulp.src([ // Переносим CSS стили в продакшен
-		config.templateDir + '/css/ss'
+	// var buildPHP= gulp.src([ // Переносим CSS стили в продакшен
+	// 	config.templateDir + '/css/ss'
+	// ])
+	// .pipe(gulp.dest(config.destDir + '/themes/ulla/css'));
+
+
+	var buildJs = gulp.src([ // Переносим CSS стили в продакшен
+		config.templateDir + '/js/libs.min.js',
+		config.templateDir + '/js/engine.js'
 	])
-	.pipe(gulp.dest(config.destDir + '/themes/ulla/css'));
+	.pipe(gulp.dest(config.destDir + '/themes/ulla/js'));
 
 
 	var buildFavicon = gulp.src('app/*.php').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
-	var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/themes/ulla/js'));
+	// var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/themes/ulla/js'));
 	var buildImages = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
 	var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
-	// var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.destDir + '/themes/ulla/fonts')); // Переносим шрифты в продакшен
+	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.destDir + '/themes/ulla/fonts')); // Переносим шрифты в продакшен
 	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest(config.destDir + '/outdatedbrowser'));
+	var favicons = gulp.src('app/the_favicon/**/*').pipe(gulp.dest(config.destDir + '/the_favicon'));
 	var faviconData = gulp.src('app/faviconData.json').pipe(gulp.dest(config.destDir));
+	var faviconIco = gulp.src('app/the_favicon/favicon.ico').pipe(gulp.dest(config.destDir));
 
 });
 

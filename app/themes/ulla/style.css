@@ -3971,6 +3971,9 @@ h3 {
     font-style: italic;
     padding: 5px 15px;
     margin: 20px 0; }
+  .text .text-title {
+    font-size: 24px;
+    font-family: 'Fira Sans Condensed', sans-serif; }
 
 /* =/text
 ---------------------------*/
@@ -4531,6 +4534,10 @@ aside {
     margin-top: 5px; }
     .main .more a {
       font-weight: 700; }
+  .main .logo {
+    margin-top: 30px; }
+    .main .logo img {
+      margin-bottom: 0; }
 
 .content {
   margin-top: -40px; }
@@ -4549,6 +4556,13 @@ aside {
     margin: 0; }
   .brands__item:last-child {
     margin-bottom: 40px; }
+
+.brand-subcat {
+  margin-bottom: 15px; }
+  .brand-subcat ul {
+    margin-left: 25px; }
+    .brand-subcat ul li {
+      margin: 6px 0; }
 
 ::-ms-clear {
   display: none; }
@@ -4849,4 +4863,6 @@ aside {
   .creators {
     font-size: 13px; }
   .brands__item {
-    margin: 30px 0; } }
+    margin: 30px 0; }
+  .brand-subcat {
+    text-align: justify; } }

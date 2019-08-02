@@ -48,6 +48,11 @@ aside{
 		font-family: 'Open Sans', sans-serif;
 		li{
 			margin: 12px 0;
+			&.current-menu-item{
+				a,span{
+					color: $color3;
+				}
+			}
 		}
 	}
 }
@@ -55,25 +60,6 @@ aside{
 
 .main{
 	border-top: 1px solid $color4;
-	ol{
-		counter-reset: li;  
-		list-style: none;
-		li{
-			margin: 1rem 0;
-			padding-left: 20px;
-			position: relative;
-			&:before{
-				color: $color4;
-				content: counter(li, decimal) ".";
-				counter-increment: li;
-				font-size: 14px;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 20px;
-			}
-		}
-	}
 }
 
 .content{

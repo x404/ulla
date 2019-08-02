@@ -3931,9 +3931,14 @@ h3 {
   margin-top: 25px; }
 
 .footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px; }
   .footer .social .social-icon {
     margin: 0 3px; }
+  .footer .social img {
+    vertical-align: top; }
 
 .footer .bottom-menu {
   font-size: 16px;
@@ -4129,6 +4134,8 @@ h3 {
       .item-collections__subcats a:hover {
         color: #ff9baa;
         transform: translateX(-3px); }
+    .item-collections__subcats .item-collections__title {
+      display: none; }
 
 .rubrics {
   margin-top: 70px;
@@ -4849,11 +4856,15 @@ h3 {
 @media (max-width: 991px) {
   .item-rubrics__link {
     max-height: 100%; }
-  .item-collections__wrap:hover .item-collections__description {
-    left: 33px; }
-  .item-collections__wrap:hover .item-collections__subcats {
-    transform: translateX(0);
-    opacity: 1; }
+  .item-collections__wrap {
+    height: 250px; }
+    .item-collections__wrap:hover .item-collections__description {
+      left: 33px; }
+    .item-collections__wrap:hover .item-collections__subcats {
+      transform: translateX(0);
+      opacity: 1; }
+  .item-collections img {
+    height: 100%; }
   .item-collections__description {
     left: 33px; }
   .item-collections__title {
@@ -4919,24 +4930,31 @@ h3 {
 @media (max-width: 460px) {
   .rubrics__item {
     margin-bottom: 20px; }
-  .item-collections__wrap:hover .item-collections__description {
-    left: 33px; }
-  .item-collections__wrap:hover .item-collections__subcats {
-    opacity: 1; }
+  .item-collections__wrap {
+    height: 300px; }
+    .item-collections__wrap:hover .item-collections__description {
+      left: 33px; }
+    .item-collections__wrap:hover .item-collections__subcats {
+      opacity: 1; }
+  .item-collections img {
+    max-width: none;
+    float: right; }
   .item-collections__description {
-    left: 0;
-    top: 40%;
-    transform: translateY(0%); }
+    display: none; }
   .item-collections__title {
     font-size: 26px;
-    text-align: center; }
-  .item-collections__text {
-    display: none; }
+    text-align: center;
+    margin-bottom: 10px; }
   .item-collections__subcats {
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
     right: 0;
-    transform: translateX(185px);
-    width: 170px; }
+    width: 160px; }
+    .item-collections__subcats .item-collections__title {
+      display: block;
+      line-height: 1.2; }
     .item-collections__subcats li {
       margin: 4px 0; }
     .item-collections__subcats a {

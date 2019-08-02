@@ -114,6 +114,7 @@
 
 	.item-collections{
 		&__wrap{
+			height: 250px;
 			&:hover{
 				.item-collections{
 					&__description{
@@ -125,6 +126,10 @@
 					}
 				}
 			}
+		}
+
+		img{
+			height: 100%;
 		}
 
 
@@ -233,6 +238,7 @@
 
 	.item-collections{
 		&__wrap{
+			height: 300px;
 			&:hover{
 				.item-collections{
 					&__description{
@@ -245,26 +251,33 @@
 			}
 		}
 
+		img{
+			max-width: none;
+			float: right;
+		}
+
 		&__description{
-			left: 0;
-			top: 40%;
-			transform: translateY(0%);
+			display: none;
 		}
 
 		&__title{
 			font-size: 26px;
 			text-align: center;
-
+			margin-bottom: 10px;
 		}
 
-		&__text{
-			display: none;
-		}
 		&__subcats{
-			padding-left: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left: 10px;
 			right: 0;
-			transform: translateX(185px);
-			width: 170px;
+			width: 160px;
+
+			.item-collections__title{
+				display: block;
+				line-height: 1.2;
+			}
 			li{
 				margin: 4px 0;
 			}

@@ -4684,6 +4684,18 @@ h3 {
 ::-ms-clear {
   display: none; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main-grid {
+    display: block; }
+  .d-grid {
+    display: flex;
+    flex-wrap: wrap; }
+  .collections__list {
+    justify-content: space-between; }
+  .item-collections {
+    margin-bottom: 30px;
+    width: 48%; } }
+
 @media (max-width: 991px) {
   .title {
     font-size: 30px; }

@@ -300,4 +300,10 @@
 	.creators{
 		font-size: 13px;
 	}
+
+	.brands{
+		&__item{
+			margin: 30px 0
+		}
+	}
 }

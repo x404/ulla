@@ -53,6 +53,9 @@ aside{
 					color: $color3;
 				}
 			}
+			a:hover{
+				color: $color3;
+			}
 		}
 	}
 }
@@ -60,6 +63,12 @@ aside{
 
 .main{
 	border-top: 1px solid $color4;
+	.more{
+		margin-top: 5px;
+		a{
+			font-weight: 700;
+		}
+	}
 }
 
 .content{

@@ -4522,9 +4522,15 @@ aside {
       margin: 12px 0; }
       aside ul li.current-menu-item a, aside ul li.current-menu-item span {
         color: #ff9baa; }
+      aside ul li a:hover {
+        color: #ff9baa; }
 
 .main {
   border-top: 1px solid #9da5aa; }
+  .main .more {
+    margin-top: 5px; }
+    .main .more a {
+      font-weight: 700; }
 
 .content {
   margin-top: -40px; }
@@ -4536,6 +4542,13 @@ aside {
   margin-right: auto;
   margin-top: 20px;
   width: calc(100% - 15px); }
+
+.brands__item {
+  margin: 30px 0 80px; }
+  .brands__item p {
+    margin: 0; }
+  .brands__item:last-child {
+    margin-bottom: 40px; }
 
 ::-ms-clear {
   display: none; }
@@ -4834,4 +4847,6 @@ aside {
         transform: translateX(-3px); }
   .copyright,
   .creators {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .brands__item {
+    margin: 30px 0; } }

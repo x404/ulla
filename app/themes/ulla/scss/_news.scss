@@ -1,0 +1,158 @@
+.news{
+	margin-top: -8px;
+	&__list{
+		grid-template-columns: repeat(3, 360px);
+		grid-column-gap: 19px;
+
+		@media (max-width: 1540px){
+			grid-template-columns: repeat(3, 310px);
+		}
+
+		@media (max-width: 1399px){
+			grid-template-columns: repeat(3, 250px);
+		}
+
+		@media (max-width: 1250px){
+			grid-template-columns: repeat(3, 295px);
+		}
+
+		@media (max-width: 550px){
+			display: block !important;
+		}
+	}
+}
+
+
+.item-news{
+	margin-bottom: 50px;
+	&__link{
+		display: block;
+		line-height: 1.3;
+		transition: .3s;
+		&:hover{
+			color: $color4;
+			text-decoration: none;
+			.item-news{
+				&__pic{				
+					border-color: #ff9baa;
+					$r: 5px;
+					border-radius: $r;
+					img{
+						border-radius: 3px;
+					}
+				}
+			}
+		}
+	}
+	&__title{
+		font-size: 24px;
+		margin-top: 25px;
+		text-transform: uppercase;
+	}
+
+	&__pic{
+		border: 3px solid rgba(255,255,255,0);
+		max-width: 100%;
+		transition: .3s;
+		img{
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	&.no-pic{
+		.item-news__link{
+			@extend .flex-center;
+			background-color: $color4;
+			border: 3px solid #fff;
+			height: 472px;
+			width: 360px;
+			&:hover{
+				color: $color1;
+				border-color: #ff9baa;
+			}
+		}
+	}
+
+	@media (max-width: 1540px){
+		&.no-pic{
+			.item-news__link{
+				height: 407px;
+				width: 100%;
+			}
+		}
+	}
+
+
+	@media (max-width: 1399px){
+		&__title{
+			font-size: 20px;
+			margin-top: 15px;
+		}
+
+		&.no-pic{
+			.item-news__link{
+				height: 327px;
+			}
+		}
+	}
+
+
+	@media (max-width: 1250px){
+		&.no-pic{
+			.item-news__link{
+				height: 387px;
+			}
+		}
+	}
+
+	@media (max-width: 991px){
+		width: 45%;	
+
+		&.no-pic{
+			.item-news__link{
+				height: 406px;
+			}
+		}
+	}
+
+
+	@media (max-width: 770px){
+		width: 47%;	
+
+		&.no-pic{
+			.item-news__link{
+				height: 314px;
+			}
+		}
+	}
+
+
+	@media (max-width: 575px){
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		&__pic{
+			height: 315px;
+			img{
+				margin-left: auto;
+				margin-right: auto;
+				height: 100%;
+				max-width: none;
+				width: auto;
+			}
+		}
+		&.no-pic{
+			.item-news__link{
+				height: 315px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 240px;
+			}
+		}
+	}
+
+
+}
+
+

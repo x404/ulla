@@ -3798,6 +3798,11 @@ h3 {
   display: block;
   position: absolute; }
 
+.flex-center, .item-news.no-pic .item-news__link, .pagination .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .top {
   display: flex;
   justify-content: space-between;
@@ -4564,6 +4569,138 @@ aside {
     .brand-subcat ul li {
       margin: 6px 0; }
 
+.news {
+  margin-top: -8px; }
+  .news__list {
+    grid-template-columns: repeat(3, 360px);
+    grid-column-gap: 19px; }
+    @media (max-width: 1540px) {
+      .news__list {
+        grid-template-columns: repeat(3, 310px); } }
+    @media (max-width: 1399px) {
+      .news__list {
+        grid-template-columns: repeat(3, 250px); } }
+    @media (max-width: 1250px) {
+      .news__list {
+        grid-template-columns: repeat(3, 295px); } }
+    @media (max-width: 550px) {
+      .news__list {
+        display: block !important; } }
+
+.item-news {
+  margin-bottom: 50px; }
+  .item-news__link {
+    display: block;
+    line-height: 1.3;
+    transition: .3s; }
+    .item-news__link:hover {
+      color: #9da5aa;
+      text-decoration: none; }
+      .item-news__link:hover .item-news__pic {
+        border-color: #ff9baa;
+        border-radius: 5px; }
+        .item-news__link:hover .item-news__pic img {
+          border-radius: 3px; }
+  .item-news__title {
+    font-size: 24px;
+    margin-top: 25px;
+    text-transform: uppercase; }
+  .item-news__pic {
+    border: 3px solid rgba(255, 255, 255, 0);
+    max-width: 100%;
+    transition: .3s; }
+    .item-news__pic img {
+      display: block;
+      max-width: 100%; }
+  .item-news.no-pic .item-news__link {
+    background-color: #9da5aa;
+    border: 3px solid #fff;
+    height: 472px;
+    width: 360px; }
+    .item-news.no-pic .item-news__link:hover {
+      color: #000;
+      border-color: #ff9baa; }
+  @media (max-width: 1540px) {
+    .item-news.no-pic .item-news__link {
+      height: 407px;
+      width: 100%; } }
+  @media (max-width: 1399px) {
+    .item-news__title {
+      font-size: 20px;
+      margin-top: 15px; }
+    .item-news.no-pic .item-news__link {
+      height: 327px; } }
+  @media (max-width: 1250px) {
+    .item-news.no-pic .item-news__link {
+      height: 387px; } }
+  @media (max-width: 991px) {
+    .item-news {
+      width: 45%; }
+      .item-news.no-pic .item-news__link {
+        height: 406px; } }
+  @media (max-width: 770px) {
+    .item-news {
+      width: 47%; }
+      .item-news.no-pic .item-news__link {
+        height: 314px; } }
+  @media (max-width: 575px) {
+    .item-news {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto; }
+      .item-news__pic {
+        height: 315px; }
+        .item-news__pic img {
+          margin-left: auto;
+          margin-right: auto;
+          height: 100%;
+          max-width: none;
+          width: auto; }
+      .item-news.no-pic .item-news__link {
+        height: 315px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 240px; } }
+
+/* =pagination
+---------------------------*/
+.pagination {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 22px 0 30px;
+  overflow: hidden; }
+  .pagination .nav-links {
+    flex-wrap: wrap; }
+    .pagination .nav-links .dots {
+      font-weight: 600; }
+    .pagination .nav-links .current {
+      color: #ff9baa;
+      font-weight: 700; }
+    .pagination .nav-links a:hover {
+      color: #ff9baa;
+      text-decoration: none; }
+    .pagination .nav-links .prev,
+    .pagination .nav-links .next {
+      background: url(images/left-arrow.png) no-repeat;
+      height: 12px;
+      margin: 0 35px;
+      text-indent: -999em;
+      width: 7px; }
+    .pagination .nav-links .next {
+      transform: rotate(180deg); }
+  .pagination .page-numbers {
+    margin: 0 20px 5px; }
+  .pagination .screen-reader-text {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    /* added line */ }
+
+/* =/pagination
+---------------------------*/
 ::-ms-clear {
   display: none; }
 

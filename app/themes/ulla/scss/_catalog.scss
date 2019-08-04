@@ -45,11 +45,13 @@
 		max-width: 100%;
 		position: relative;
 		transition: .3s;
+		overflow: hidden;
 		img{
 			background: url(images/ajax-loader.gif) no-repeat center center;
 			display: block;
 			max-width: 100%;
 			min-height: 250px;
+			transition: transform .3s;
 		}
 
 		&:after,
@@ -65,6 +67,7 @@
 
 		&:before{
 			background: #fff;
+			z-index: 5;
 		}
 
 		&:after{
@@ -75,6 +78,7 @@
 			margin-top: -26px;
 			top: 50%;
 			width: 53px;
+			z-index: 6;
 		}
 	}
 
@@ -97,6 +101,7 @@
 					$r: 5px;
 					border-radius: $r;
 					img{
+						transform: scale(1.1);
 						border-radius: 2px;
 					}
 
@@ -110,7 +115,6 @@
 					}
 				}
 			}
-
 		}
 	}
 

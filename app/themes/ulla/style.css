@@ -3774,14 +3774,28 @@ a {
   color: #020000;
   transition: .3s; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.5; }
+
 h1 {
-  font-size: 2.5rem; }
+  font-size: 34px;
+  margin-bottom: 40px; }
 
 h2 {
-  font-size: 2.4rem; }
+  font-size: 30px; }
 
 h3 {
-  font-size: 1.6rem; }
+  font-size: 26px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
 
 .tdn {
   text-decoration: none; }
@@ -3793,7 +3807,7 @@ h3 {
   .tdu:hover, .creators a:hover, .item-collections__subcats a:hover {
     text-decoration: none; }
 
-.before, .title:before, .title:after, .item-collections__wrap:before, .item-rubrics__link:before, .breadcrumbs ul li:after, .item-products__pic:after, .item-products__pic:before {
+.before, .title:before, .title:after, .item-collections__wrap:before, .item-rubrics__link:before, .breadcrumbs ul li:after, .item-products__pic:after, .item-products__pic:before, .shops .icon:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4801,6 +4815,59 @@ aside {
 
 /* =/pagination
 ---------------------------*/
+.shops .address {
+  font-size: 18px; }
+
+.shops h2 {
+  margin-bottom: 15px; }
+
+.shops .icon {
+  min-height: 34px;
+  padding-left: 37px;
+  position: relative; }
+  .shops .icon-address:before {
+    background-image: url(images/sprite.png);
+    background-position: 0px -34px;
+    width: 25px;
+    height: 36px;
+    left: 0;
+    top: 0; }
+  .shops .icon-time:before {
+    background-image: url(images/sprite.png);
+    background-position: -28px -27px;
+    width: 27px;
+    height: 27px;
+    left: 0;
+    top: 0; }
+  .shops .icon-tel:before {
+    background-image: url(images/sprite.png);
+    background-position: -28px 0px;
+    width: 27px;
+    height: 27px;
+    left: 0;
+    top: 0; }
+  .shops .icon-metro:before {
+    background-image: url(images/sprite.png);
+    background-position: 0px 0px;
+    width: 28px;
+    height: 34px;
+    left: 0;
+    top: 0; }
+
+.shops .shop-item {
+  margin-bottom: 70px; }
+  .shops .shop-item p {
+    margin: 0 0 15px; }
+
+.shops .map {
+  margin-top: 20px; }
+
+@media (max-width: 767px) {
+  .shops .address {
+    font-size: 14px; }
+  .shops .shop-item {
+    margin-bottom: 40px; } }
+
 ::-ms-clear {
   display: none; }
 
@@ -4902,6 +4969,8 @@ aside {
     margin-bottom: 10px; }
   .subscribe .mc4wp-form-fields .form-control {
     font-size: 14px; }
+  .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
+    line-height: 1.3; }
   .text h1 {
     font-size: 26px; }
   .text h2 {

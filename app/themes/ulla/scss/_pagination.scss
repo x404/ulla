@@ -1,0 +1,53 @@
+/* =pagination
+---------------------------*/
+.pagination{ 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 22px 0 30px;
+	overflow: hidden;
+	.nav-links{
+		@extend .flex-center;
+		flex-wrap: wrap;
+		.dots{
+			font-weight: 600;
+		}
+		.current{
+			color: $color3;
+			font-weight: 700;
+		}
+
+		a{
+			&:hover{
+				color: $color3;
+				text-decoration: none;
+			}
+		}
+
+		.prev,
+		.next{
+			background: url(images/left-arrow.png) no-repeat;
+			height: 12px;
+			margin: 0 35px;
+			text-indent: -999em;
+			width: 7px;
+		}
+
+		.next{
+			transform: rotate(180deg);
+		}
+	}
+	.page-numbers{
+		margin: 0 20px 5px  
+	}
+
+	.screen-reader-text{
+		position: absolute !important;
+		height: 1px; 
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px, 1px, 1px, 1px);
+		white-space: nowrap; /* added line */
+	}
+}
+/* =/pagination
+---------------------------*/

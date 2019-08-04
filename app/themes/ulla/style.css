@@ -4753,6 +4753,7 @@ aside {
   .item-products__logo {
     margin: 22px 0; }
   .item-products__title {
+    font-size: 18px;
     margin: 18px 0; }
   .item-products__link:hover {
     color: #000;

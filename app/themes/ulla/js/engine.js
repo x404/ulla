@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),
@@ -22,6 +20,14 @@ $(document).ready(function(){
 			};
 		init();
 	});	
+
+	$('.toggle-more').click(function(e){
+		e.preventDefault();
+		var $this = $(this);
+		$this.prev('.moretext').slideDown('normal', function(){
+			$this.remove()
+		});
+	})
 });
 
 

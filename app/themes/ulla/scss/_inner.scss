@@ -120,3 +120,16 @@ aside{
 	margin-top: 20px;
 	width: calc(100% - 15px);
 }
+
+
+
+.moretext{
+	display: none;
+	margin-top: 25px;
+	& > p{
+		margin-top: 0;
+	}
+	&.show{
+		display: block;
+	}
+}

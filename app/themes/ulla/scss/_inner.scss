@@ -58,6 +58,36 @@ aside{
 			}
 		}
 	}
+
+
+	.widget{
+		margin-bottom: 40px;
+	}
+
+	.widget-title{
+		font-family: "Fira Sans Condensed", sans-serif;
+		font-size: 22px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+	.widget_nav_menu{
+		font-size: 18px;
+		ul{
+			font-family: "Fira Sans Condensed", sans-serif;			
+		}
+		.menu-current-item{
+			a, span{
+				color: $color3;	
+			}
+		}
+		a{
+			&:hover{
+				color: $color3;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 

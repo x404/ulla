@@ -12,6 +12,4 @@ ULLA
 __Используемые в проекте js плагины__
 * Скрипт стилизации выпадающих списков с поиском[https://github.com/selectize/selectize.js](https://github.com/selectize/selectize.js)
 * Сообщение для устаревших браузеров Outdated Browser v1.1.5[https://github.com/burocratik/outdated-browser](https://github.com/burocratik/outdated-browser) [Демо](http://outdatedbrowser.com/ru)
-* Slick слайдер [https://github.com/kenwheeler/slick](https://github.com/kenwheeler/slick)
-
-
+* Скрипт стилизации выпадающих списков с поиском[https://github.com/selectize/selectize.js](https://github.com/selectize/selectize.js) , [http://selectize.github.io/selectize.js/](http://selectize.github.io/selectize.js/)

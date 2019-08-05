@@ -3807,7 +3807,7 @@ h6 {
   .tdu:hover, .creators a:hover, .item-collections__subcats a:hover {
     text-decoration: none; }
 
-.before, .title:before, .title:after, .item-collections__wrap:before, .item-rubrics__link:before, .breadcrumbs ul li:after, .item-products__pic:after, .item-products__pic:before, .shops .icon:before {
+.before, .title:before, .title:after, .item-collections__wrap:before, .item-rubrics__link:before, .breadcrumbs ul li:after, .icon:before, .item-products__pic:after, .item-products__pic:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4596,6 +4596,49 @@ aside {
   .moretext.show {
     display: block; }
 
+.icon {
+  min-height: 34px;
+  padding-left: 37px;
+  position: relative; }
+  .icon:before {
+    left: 0;
+    top: 0; }
+  .icon-address:before {
+    background-image: url(images/sprite.png);
+    background-position: 0px -34px;
+    width: 25px;
+    height: 36px; }
+  .icon-time:before {
+    background-image: url(images/sprite.png);
+    background-position: -58px -27px;
+    width: 27px;
+    height: 27px; }
+  .icon-tel:before {
+    background-image: url(images/sprite.png);
+    background-position: -58px 0px;
+    width: 27px;
+    height: 27px; }
+  .icon-metro:before {
+    background-image: url(images/sprite.png);
+    background-position: 0px 0px;
+    width: 28px;
+    height: 34px; }
+  .icon-tel-black:before {
+    background-image: url(images/sprite.png);
+    background-position: -28px 0px;
+    width: 30px;
+    height: 30px; }
+  .icon-email-black:before {
+    background-image: url(images/sprite.png);
+    background-position: -85px 0px;
+    width: 31px;
+    height: 23px; }
+  .icon-time-black:before {
+    background-image: url(images/sprite.png);
+    background-position: -28px -30px;
+    width: 29px;
+    height: 31px; }
+
 .brands__item {
   margin: 30px 0 80px; }
   .brands__item p {
@@ -4838,39 +4881,6 @@ aside {
 .shops h2 {
   margin-bottom: 15px; }
 
-.shops .icon {
-  min-height: 34px;
-  padding-left: 37px;
-  position: relative; }
-  .shops .icon-address:before {
-    background-image: url(images/sprite.png);
-    background-position: 0px -34px;
-    width: 25px;
-    height: 36px;
-    left: 0;
-    top: 0; }
-  .shops .icon-time:before {
-    background-image: url(images/sprite.png);
-    background-position: -28px -27px;
-    width: 27px;
-    height: 27px;
-    left: 0;
-    top: 0; }
-  .shops .icon-tel:before {
-    background-image: url(images/sprite.png);
-    background-position: -28px 0px;
-    width: 27px;
-    height: 27px;
-    left: 0;
-    top: 0; }
-  .shops .icon-metro:before {
-    background-image: url(images/sprite.png);
-    background-position: 0px 0px;
-    width: 28px;
-    height: 34px;
-    left: 0;
-    top: 0; }
-
 .shops .shop-item {
   margin-bottom: 70px; }
   .shops .shop-item p {
@@ -4884,6 +4894,57 @@ aside {
     font-size: 14px; }
   .shops .shop-item {
     margin-bottom: 40px; } }
+
+.contact-page {
+  font-family: 'Open Sans', sans-serif; }
+  .contact-page .item {
+    font-size: 16px;
+    margin-bottom: 25px; }
+  .contact-page .icon {
+    padding-left: 70px; }
+  .contact-page form label {
+    display: block;
+    margin-bottom: 4px; }
+  .contact-page form .form-row {
+    margin-bottom: 15px; }
+  .contact-page form .form-control {
+    border: 1px solid #b8bdc1;
+    display: block;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%; }
+    .contact-page form .form-control:focus {
+      border-color: #ff9baa; }
+    .contact-page form .form-control.error {
+      border-color: red; }
+    .contact-page form .form-control.valid {
+      border-color: #000; }
+  .contact-page form input.form-control {
+    height: 42px; }
+  .contact-page form textarea {
+    height: 110px; }
+  .contact-page form .submit {
+    background: none;
+    border: 1px solid #000000;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    width: 205px;
+    transition: .3s;
+    outline: none; }
+    .contact-page form .submit:hover {
+      border: 1px solid #9da5aa;
+      background-color: #9da5aa;
+      color: #fff; }
+    .contact-page form .submit:focus {
+      background-color: #9da5aa;
+      color: #ff9baa;
+      border-color: #9da5aa; }
 
 ::-ms-clear {
   display: none; }

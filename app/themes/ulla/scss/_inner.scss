@@ -133,3 +133,50 @@ aside{
 		display: block;
 	}
 }
+
+
+.icon{
+	min-height: 34px;
+	padding-left: 37px;
+	position: relative;
+	&:before{
+		@extend .before;
+		left: 0;
+		top: 0;
+	}
+	&-address{
+		&:before{
+			@include sprite($icon-address);
+		}
+	}
+	&-time{
+		&:before{
+			@include sprite($icon-time);
+		}
+	}
+	&-tel{
+		&:before{
+			@include sprite($icon-tel);
+		}
+	}
+	&-metro{
+		&:before{
+			@include sprite($icon-metro);
+		}
+	}
+	&-tel-black{
+		&:before{
+			@include sprite($icon-tel-black);
+		}
+	}
+	&-email-black{
+		&:before{
+			@include sprite($icon-email-black);
+		}
+	}
+	&-time-black{
+		&:before{
+			@include sprite($icon-time-black);
+		}
+	}
+}

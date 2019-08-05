@@ -141,34 +141,76 @@
 			</div>
 			<h1 class="title">Контакты</h1>
 
-			<div class="row contacts">
+			<div class="row contact-page">
 				<div class="col-xl-5 offset-xl-2">
-					<div class="tel icon icon-tel">
+					<div class="item tel icon icon-tel-black">
 						Единая справочная служба: +7 495 649 92 92 <br>
 						Франчайзинг и опт в России: +7 985 586 69 94 <br>
 						Viber, WhatsApp, SMS:  +7 985 586 69 94
 					</div>
-					<div class="icon icon-email">
+					<div class="item icon icon-email-black">
 						info@ullapopken-moscow.ru
 					</div>
-					<div class="icon icon-time">
+					<div class="item icon icon-time-black">
 						График работы <br>
 						Пн-Пт : с 10:00 до 19:00 <br>
 						Сб, Вс : выходной
 					</div>
 
-					<p>*Обязательное для заполнение поле</p>
+					<p class="icon">*Обязательное для заполнение поле</p>
 				</div>
 				<div class="col-xl-6 offset-xl-1">
 					<form action="#" method="post">
-						<label for="name">*Ваше имя </label>
-						<input type="text" class="form-control required" value="" id="name">
-						<label for="email">*Ваш email</label>
-						<input type="email" class="form-control required" value="" id="email">
-						<label for="tel">*Телефон</label>
-						<input type="tel" class="form-control required" value="" id="tel">
-						<label for="city">Город</label>
-						<input type="text" class="form-control" value="" id="city">
+						<div class="form-row">
+							<label for="name">*Ваше имя </label>
+							<input type="text" class="form-control required" value="" id="name" />							
+						</div>
+						<div class="form-row">
+							<label for="your-email">*Ваш email</label>
+							<input type="email" class="form-control required" value="" id="your-email" />							
+						</div>
+						<div class="form-row">
+							<label for="tel">*Телефон</label>
+							<input type="tel" class="form-control required" value="" id="tel" />							
+						</div>
+						<div class="form-row">
+							<label for="city">Город</label>
+							<input type="text" class="form-control" value="" id="city" />							
+						</div>
+
+						<div class="form-row">
+							<label for="">Тема</label>
+							<select name="theme" id="theme">
+								<option value="опт">опт</option>
+								<option value="франчайзинг">франчайзинг</option>
+								<option value="иное">иное</option>
+							</select>
+						</div>
+
+						<div class="form-row">
+							<label for="">Наличие опыта в рознице </label>
+							<select name="experience" id="experience">
+								<option value="есть">есть</option>
+								<option value="нет">нет</option>
+								<option value="иное">иное</option>
+							</select>
+						</div>
+
+						<div class="form-row">
+							<label for="shop">Название существующего магазина</label>
+							<input type="text" class="form-control" value="" id="shop" />							
+						</div>
+						<div class="form-row">
+							<label for="size">Размер торговой площади</label>
+							<input type="text" class="form-control" value="" id="size" />							
+						</div>
+
+						<div class="form-row">
+							<label for="msg">Ваше сообшение</label>
+							<textarea name="msg" id="msg" cols="30" rows="10" class="form-control"></textarea>							
+						</div>
+
+						<input type="submit" value="отправить" class="submit" />
 					</form>
 				</div>
 			</div>

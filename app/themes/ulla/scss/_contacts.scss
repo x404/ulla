@@ -1,0 +1,76 @@
+.contact-page{
+	font-family: 'Open Sans', sans-serif;
+	.item{
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+
+	.icon{
+		padding-left: 70px;
+	}
+
+	form{
+
+		label{
+			display: block;
+			margin-bottom: 4px;
+		}
+
+		.form-row{
+			margin-bottom: 15px;
+		}
+		
+		.form-control{
+			border: 1px solid #b8bdc1;
+			display: block;
+			outline: none;
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 100%;
+			&:focus{
+				border-color: $color3;
+			}
+
+			&.error{
+				border-color: red
+			}
+
+			&.valid{
+				border-color: #000
+			}
+		}
+
+		input.form-control{
+			height: 42px;			
+		}
+
+		textarea{
+			height: 110px;
+		}
+
+		.submit{
+			background: none;
+			border: 1px solid #000000;
+			cursor: pointer;
+			display: block;
+			font-size: 18px;
+			height: 58px;
+			margin-left: auto;
+			margin-right: auto;
+			text-transform: uppercase;
+			width: 205px;
+			transition: .3s;
+			outline: none;
+			&:hover{
+				border: 1px solid $color4;
+				background-color: $color4;
+				color: $color2;
+			}
+			&:focus{
+				background-color: $color4;
+				color: $color3;
+				border-color: $color4;
+			}
+		}
+	}
+}

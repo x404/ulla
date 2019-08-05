@@ -1,5 +1,3 @@
-
-
 .shops{
 	.address{
 		font-size: 18px;
@@ -8,42 +6,6 @@
 		margin-bottom: 15px;
 	}
 
-	.icon{
-		min-height: 34px;
-		padding-left: 37px;
-		position: relative;
-		&:before{
-			@extend .before;
-		}
-		&-address{
-			&:before{
-				@include sprite($icon-address);
-				left: 0;
-				top: 0;
-			}
-		}
-		&-time{
-			&:before{
-				@include sprite($icon-time);
-				left: 0;
-				top: 0;
-			}
-		}
-		&-tel{
-			&:before{
-				@include sprite($icon-tel);
-				left: 0;
-				top: 0;
-			}
-		}
-		&-metro{
-			&:before{
-				@include sprite($icon-metro);
-				left: 0;
-				top: 0;
-			}
-		}
-	}
 
 	.shop-item{
 		margin-bottom: 70px;

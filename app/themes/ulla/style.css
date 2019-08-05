@@ -4161,6 +4161,9 @@ h6 {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap; }
 
+.home .main {
+  border-top: none; }
+
 .home-carousel img {
   max-width: 100%; }
 

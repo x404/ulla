@@ -4899,12 +4899,13 @@ aside {
   font-family: 'Open Sans', sans-serif; }
   .contact-page .item {
     font-size: 16px;
-    margin-bottom: 25px; }
-  .contact-page .icon {
+    margin-bottom: 30px; }
+  .contact-page .icon,
+  .contact-page .asterisk {
     padding-left: 70px; }
   .contact-page form label {
     display: block;
-    margin-bottom: 4px; }
+    margin-bottom: 7px; }
   .contact-page form .form-row {
     margin-bottom: 15px; }
   .contact-page form .form-control {
@@ -4930,9 +4931,8 @@ aside {
     cursor: pointer;
     display: block;
     font-size: 18px;
-    height: 58px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 55px;
+    margin: 25px auto 0;
     text-transform: uppercase;
     width: 205px;
     transition: .3s;
@@ -4945,6 +4945,22 @@ aside {
       background-color: #9da5aa;
       color: #ff9baa;
       border-color: #9da5aa; }
+  @media (max-width: 991px) {
+    .contact-page .right {
+      margin-top: 20px; }
+    .contact-page .asterisk {
+      padding-left: 0; } }
+  @media (max-width: 576px) {
+    .contact-page .icon {
+      padding-left: 0;
+      text-align: center; }
+      .contact-page .icon:before {
+        display: none; }
+    .contact-page .asterisk {
+      text-align: center; } }
+
+label.error {
+  display: none !important; }
 
 ::-ms-clear {
   display: none; }

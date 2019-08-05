@@ -142,7 +142,7 @@
 			<h1 class="title">Контакты</h1>
 
 			<div class="row contact-page">
-				<div class="col-xl-5 offset-xl-2">
+				<div class="col-xl-5 col-lg-7 offset-xl-2">
 					<div class="item tel icon icon-tel-black">
 						Единая справочная служба: +7 495 649 92 92 <br>
 						Франчайзинг и опт в России: +7 985 586 69 94 <br>
@@ -157,56 +157,58 @@
 						Сб, Вс : выходной
 					</div>
 
-					<p class="icon">*Обязательное для заполнение поле</p>
+					<p class="asterisk">*Обязательное для заполнение поле</p>
 				</div>
-				<div class="col-xl-6 offset-xl-1">
+				<div class="right col-xl-6 col-lg-8 offset-lg-1">
 					<form action="#" method="post">
 						<div class="form-row">
 							<label for="name">*Ваше имя </label>
-							<input type="text" class="form-control required" value="" id="name" />							
+							<input name="name" type="text" class="form-control required" value="" id="name" />							
 						</div>
 						<div class="form-row">
 							<label for="your-email">*Ваш email</label>
-							<input type="email" class="form-control required" value="" id="your-email" />							
+							<input name="email" type="email" class="form-control required email" value="" id="your-email" />							
 						</div>
 						<div class="form-row">
 							<label for="tel">*Телефон</label>
-							<input type="tel" class="form-control required" value="" id="tel" />							
+							<input name="tel" type="tel" class="form-control required" value="" id="tel" />							
 						</div>
 						<div class="form-row">
 							<label for="city">Город</label>
-							<input type="text" class="form-control" value="" id="city" />							
+							<input name="city" type="text" class="form-control" value="" id="city" />							
 						</div>
 
 						<div class="form-row">
-							<label for="">Тема</label>
-							<select name="theme" id="theme">
-								<option value="опт">опт</option>
-								<option value="франчайзинг">франчайзинг</option>
+							<label for="theme">Тема</label>
+							<select name="theme" id="theme" placeholder="Выбрать">
+								<option value="">Выбрать</option>
+								<option value="опт">Опт</option>
+								<option value="франчайзинг">Франчайзинг</option>
 								<option value="иное">иное</option>
 							</select>
 						</div>
 
 						<div class="form-row">
-							<label for="">Наличие опыта в рознице </label>
-							<select name="experience" id="experience">
-								<option value="есть">есть</option>
-								<option value="нет">нет</option>
-								<option value="иное">иное</option>
+							<label for="experience">Наличие опыта в рознице </label>
+							<select name="experience" id="experience" placeholder="Выбрать">
+								<option value="">Выбрать</option>
+								<option value="есть">Есть</option>
+								<option value="нет">Нет</option>
+								<option value="иное">Иное</option>
 							</select>
 						</div>
 
 						<div class="form-row">
 							<label for="shop">Название существующего магазина</label>
-							<input type="text" class="form-control" value="" id="shop" />							
+							<input name="shop" type="text" class="form-control" value="" id="shop" />							
 						</div>
 						<div class="form-row">
 							<label for="size">Размер торговой площади</label>
-							<input type="text" class="form-control" value="" id="size" />							
+							<input name="size" type="text" class="form-control" value="" id="size" />							
 						</div>
 
 						<div class="form-row">
-							<label for="msg">Ваше сообшение</label>
+							<label for="msg">Ваше сообщение</label>
 							<textarea name="msg" id="msg" cols="30" rows="10" class="form-control"></textarea>							
 						</div>
 
@@ -455,6 +457,8 @@
 
 <div id="outdated"></div>
 <script src="/themes/ulla/js/engine.js"></script>
-<!-- InstanceBeginEditable name="EditRegion4" -->EditRegion4<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="EditRegion4" -->
+<link rel="stylesheet" property="stylesheet" href="/themes/ulla/css/selectize.css" />
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

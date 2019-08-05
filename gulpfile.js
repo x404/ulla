@@ -56,12 +56,13 @@ gulp.task('compress', function(){
 	pump([
 			gulp.src([  // Берем все необходимые библиотеки
 				config.libsDir + '/jquery/dist/jquery.js',
-				// config.libsDir + '/jquery-validation/dist/jquery.validate.js',
+				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				// config.templateDir + '/js/util.js',
 				// config.templateDir + '/js/tab.js',
 				// config.templateDir + '/js/modal.js',
 				// config.templateDir + '/js/popper.min.js',
 				config.templateDir + '/js/jquery.fancybox.min.js',
+				config.libsDir + '/selectize/dist/js/standalone/selectize.min.js'
 				// config.templateDir + '/js/collapse.js',
 				// config.templateDir + '/js/slick.min.js'
 			]),

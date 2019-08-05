@@ -1,12 +1,12 @@
 {
-  "name": "abmene",
+  "name": "ulla",
   "description": "",
   "main": "index.js",
   "authors": [
     "x404"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/x404/autoservice",
+  "homepage": "https://github.com/x404/ulla",
   "ignore": [
     "**/.*",
     "node_modules",

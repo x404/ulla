@@ -2,24 +2,24 @@
 	font-family: 'Open Sans', sans-serif;
 	.item{
 		font-size: 16px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
 
-	.icon{
+	.icon,
+	.asterisk{
 		padding-left: 70px;
 	}
 
 	form{
-
 		label{
 			display: block;
-			margin-bottom: 4px;
+			margin-bottom: 7px;
 		}
 
 		.form-row{
 			margin-bottom: 15px;
 		}
-		
+
 		.form-control{
 			border: 1px solid #b8bdc1;
 			display: block;
@@ -54,9 +54,8 @@
 			cursor: pointer;
 			display: block;
 			font-size: 18px;
-			height: 58px;
-			margin-left: auto;
-			margin-right: auto;
+			height: 55px;
+			margin: 25px auto 0;	
 			text-transform: uppercase;
 			width: 205px;
 			transition: .3s;
@@ -73,4 +72,30 @@
 			}
 		}
 	}
+
+	@media (max-width: 991px){
+		.right{
+			margin-top: 20px;
+		}
+		.asterisk{
+			padding-left: 0;
+		}
+	}
+
+	@media (max-width: 576px){
+		.icon{
+			padding-left: 0;
+			text-align: center;
+			&:before{
+				display: none;
+			}
+		}
+		.asterisk{
+			text-align: center;
+		}
+	}
+}
+
+label.error{
+	display: none !important;
 }

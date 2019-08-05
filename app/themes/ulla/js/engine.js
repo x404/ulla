@@ -28,6 +28,11 @@ $(document).ready(function(){
 			$this.remove()
 		});
 	})
+
+	$('.contact-page form').validate();
+
+	$('select#theme').selectize();
+	$('select#experience').selectize();
 });
 
 

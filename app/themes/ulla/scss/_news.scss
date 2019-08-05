@@ -55,8 +55,10 @@
 		max-width: 100%;
 		transition: .3s;
 		img{
+			background: url(images/ajax-loader.gif) no-repeat center center;
 			display: block;
 			max-width: 100%;
+			min-height: 250px;
 		}
 	}
 

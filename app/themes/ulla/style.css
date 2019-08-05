@@ -4697,8 +4697,10 @@ aside {
     max-width: 100%;
     transition: .3s; }
     .item-news__pic img {
+      background: url(images/ajax-loader.gif) no-repeat center center;
       display: block;
-      max-width: 100%; }
+      max-width: 100%;
+      min-height: 250px; }
   .item-news.no-pic .item-news__link {
     background-color: #9da5aa;
     border: 3px solid #fff;
@@ -4886,8 +4888,12 @@ aside {
 
 .shops .shop-item {
   margin-bottom: 70px; }
+  .shops .shop-item:last-child {
+    margin-bottom: 0; }
   .shops .shop-item p {
     margin: 0 0 15px; }
+  .shops .shop-item .contact-item {
+    margin-bottom: 15px; }
 
 .shops .map {
   margin-top: 20px; }
@@ -5076,11 +5082,22 @@ label.error {
   .d-grid {
     display: flex;
     flex-wrap: wrap; }
+  .navmenu .nav .submenu {
+    z-index: 1;
+    opacity: 1;
+    display: none; }
+  .navmenu .nav > li:hover .submenu {
+    display: block; }
   .collections__list {
     justify-content: space-between; }
   .item-collections {
     margin-bottom: 30px;
-    width: 48%; } }
+    width: 48%; }
+  .item-news,
+  .products__item {
+    width: 30%; }
+  .video__item {
+    width: 260px; } }
 
 @media (max-width: 991px) {
   .title {

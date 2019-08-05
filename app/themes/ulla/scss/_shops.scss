@@ -9,8 +9,15 @@
 
 	.shop-item{
 		margin-bottom: 70px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 		p{
 			margin: 0 0 15px;
+		}
+
+		.contact-item{
+			margin-bottom: 15px;
 		}
 	}
 

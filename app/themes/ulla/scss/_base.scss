@@ -251,6 +251,8 @@ h6{
 				}
 			}
 
+
+			&:focus-within,
 			&:hover{
 				& > a{
 					border-bottom-color: $color3;

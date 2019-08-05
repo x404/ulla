@@ -3874,9 +3874,9 @@ h6 {
         color: #9da5aa; }
     .navmenu .nav > li.current-menu-item > a {
       color: #9da5aa; }
-    .navmenu .nav > li:hover > a {
+    .navmenu .nav > li:focus-within > a, .navmenu .nav > li:hover > a {
       border-bottom-color: #ff9baa; }
-    .navmenu .nav > li:hover .submenu {
+    .navmenu .nav > li:focus-within .submenu, .navmenu .nav > li:hover .submenu {
       opacity: 1;
       z-index: 1; }
   .navmenu .nav .submenu {

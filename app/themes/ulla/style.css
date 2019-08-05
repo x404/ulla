@@ -4957,7 +4957,46 @@ aside {
       .contact-page .icon:before {
         display: none; }
     .contact-page .asterisk {
-      text-align: center; } }
+      text-align: center; }
+    .contact-page .selectize-input,
+    .contact-page .selectize-dropdown .option,
+    .contact-page .selectize-dropdown .optgroup-header {
+      padding-left: 15px; }
+    .contact-page .right .thank {
+      font-size: 16px;
+      margin-left: -45%;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 90%; } }
+  .contact-page .thank {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #9da5aa;
+    font-size: 18px;
+    height: 123px;
+    left: 50%;
+    margin-left: -227px;
+    position: absolute;
+    top: 20%;
+    width: 457px; }
+    .contact-page .thank .close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: 13px; }
+      .contact-page .thank .close svg {
+        transition: transform .3s;
+        transform-origin: center center;
+        vertical-align: top; }
+      .contact-page .thank .close line {
+        stroke: #000;
+        stroke-width: 2px; }
+      .contact-page .thank .close:hover svg {
+        transform: rotate(90deg); }
 
 label.error {
   display: none !important; }

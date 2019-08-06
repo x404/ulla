@@ -5076,6 +5076,14 @@ label.error {
 ::-ms-clear {
   display: none; }
 
+@supports (-ms-ime-align: auto) {
+  .navmenu .nav .submenu {
+    z-index: 1;
+    opacity: 1;
+    display: none; }
+  .navmenu .nav > li:hover .submenu {
+    display: block; } }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .main-grid {
     display: block; }

@@ -1,3 +1,4 @@
 DirectoryIndex index.html homepage.html index.php
-#Deny from all
-#Allow from 109.87.170.201
+Deny from all
+Allow from 109.87.170.201
+Allow from 127.0.0.1

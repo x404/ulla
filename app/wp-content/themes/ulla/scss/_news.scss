@@ -124,11 +124,19 @@
 
 		&.no-pic{
 			.item-news__link{
-				height: 314px;
+				height: 425px;
 			}
 		}
 	}
 
+
+	@media (max-width: 767px){
+		&.no-pic{
+			.item-news__link{
+				height: 314px;
+			}
+		}
+	}
 
 	@media (max-width: 575px){
 		width: 280px;

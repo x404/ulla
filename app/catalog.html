@@ -95,7 +95,7 @@
 									<li><a href="#" title="">Опт</a></li>
 									<li><a href="#" title="">Розница</a></li>
 									<li><a href="#" title="">Дисконтная программа</a></li>
-									<li><a href="articles.html" title="">Статьи</a></li>
+									<li><a href="news.html" title="">Новости</a></li>
 									<li><a href="video.html" title="">Видео</a></li>
 								</ul>
 							</div>
@@ -133,6 +133,41 @@
 	<div class="main">
 		<!-- InstanceBeginEditable name="EditRegion3" -->
 		<div class="container">
+			<select name="menu" id="selectmenu" class="d-md-none">
+				<option value="" disabled="disabled" selected="">КАТЕГОРИИ</option>
+				<option value="/">- блузы</option>
+				<option value="/">- брюки</option>
+				<option value="/">- одежда верхняя</option>
+				<option value="/">- жакеты</option>
+				<option value="/">- платья</option>
+				<option value="/">- пуловеры</option>
+				<option value="/">- юбки</option>
+				<option value="/">- белье</option>
+				<option value="/">- одежда для дома</option>
+				<option value="/">- спортивная одежда</option>
+
+				<option value="" disabled="disabled">КОЛЛЕКЦИЯ</option>
+				<option value="/">- Womens Wear </option>
+				<option value="/">- Selection </option>
+				<option value="/">- PURE </option>
+				<option value="/">- Studio UNTOLD </option>
+
+				<option value="" disabled="disabled">СЕЗОН</option>
+				<option value="/">- Весна</option>
+				<option value="/">- Лето</option>
+				<option value="/">- Осень</option>
+				<option value="/">- Зима</option>
+
+				<option value="" disabled="disabled">Бренды</option>
+				<option value="/">- Ulla Popken</option>
+			</select>
+			<script>
+				document.querySelector('#selectmenu').onchange = function (e) {
+					url = this.value;
+					window.location.href = url;
+				}
+			</script>
+
 			<div class="breadcrumbs d-flex justify-content-center">
 				<ul>
 					<li><a href="/" title="" class="breadcrumbs__link">Главная</a></li>
@@ -187,40 +222,6 @@
 				</aside>
 
 				<div class="col-xl-12 col-lg-12 col-md-11">
-					<select name="menu" id="selectmenu" class="d-md-none">
-						<option value="" disabled="disabled" selected="">КАТЕГОРИИ</option>
-						<option value="/">- блузы</option>
-						<option value="/">- брюки</option>
-						<option value="/">- одежда верхняя</option>
-						<option value="/">- жакеты</option>
-						<option value="/">- платья</option>
-						<option value="/">- пуловеры</option>
-						<option value="/">- юбки</option>
-						<option value="/">- белье</option>
-						<option value="/">- одежда для дома</option>
-						<option value="/">- спортивная одежда</option>
-
-						<option value="" disabled="disabled">КОЛЛЕКЦИЯ</option>
-						<option value="/">- Womens Wear </option>
-						<option value="/">- Selection </option>
-						<option value="/">- PURE </option>
-						<option value="/">- Studio UNTOLD </option>
-
-						<option value="" disabled="disabled">СЕЗОН</option>
-						<option value="/">- Весна</option>
-						<option value="/">- Лето</option>
-						<option value="/">- Осень</option>
-						<option value="/">- Зима</option>
-
-						<option value="" disabled="disabled">Бренды</option>
-						<option value="/">- Ulla Popken</option>
-					</select>
-					<script>
-						document.querySelector('#selectmenu').onchange = function (e) {
-							url = this.value;
-							window.location.href = url;
-						}
-					</script>
 
 
 					<!-- =products -->

@@ -4382,8 +4382,8 @@ h6 {
     text-align: center;
     top: 0;
     width: 80px;
-    z-index: 99;
-    justify-content: center; }
+    padding-top: 22px;
+    z-index: 99; }
     .navbar-toggle .icon-bar {
       background-color: #000;
       display: block;
@@ -4731,7 +4731,10 @@ aside {
     .item-news {
       width: 47%; }
       .item-news.no-pic .item-news__link {
-        height: 314px; } }
+        height: 425px; } }
+  @media (max-width: 767px) {
+    .item-news.no-pic .item-news__link {
+      height: 314px; } }
   @media (max-width: 575px) {
     .item-news {
       width: 280px;
@@ -4880,29 +4883,27 @@ aside {
 
 /* =/pagination
 ---------------------------*/
-.shops .address {
-  font-size: 18px; }
-
-.shops h2 {
-  margin-bottom: 15px; }
-
-.shops .shop-item {
-  margin-bottom: 70px; }
-  .shops .shop-item:last-child {
-    margin-bottom: 0; }
-  .shops .shop-item p {
-    margin: 0 0 15px; }
-  .shops .shop-item .contact-item {
-    margin-bottom: 15px; }
-
-.shops .map {
-  margin-top: 20px; }
-
-@media (max-width: 767px) {
+.shops {
+  margin-top: -25px; }
   .shops .address {
-    font-size: 14px; }
+    font-size: 18px; }
+  .shops h2 {
+    margin-bottom: 15px; }
   .shops .shop-item {
-    margin-bottom: 40px; } }
+    margin-bottom: 70px; }
+    .shops .shop-item:last-child {
+      margin-bottom: 0; }
+    .shops .shop-item p {
+      margin: 0 0 15px; }
+    .shops .shop-item .contact-item {
+      margin-bottom: 15px; }
+  .shops .map {
+    margin-top: 20px; }
+  @media (max-width: 767px) {
+    .shops .address {
+      font-size: 14px; }
+    .shops .shop-item {
+      margin-bottom: 40px; } }
 
 .contact-page {
   font-family: 'Open Sans', sans-serif; }
@@ -5294,7 +5295,10 @@ label.error {
   .item-rubrics__link {
     max-height: 100%; }
   .item-collections__wrap {
-    height: 250px; }
+    height: 250px;
+    max-width: 545px;
+    margin-left: auto;
+    margin-right: auto; }
     .item-collections__wrap:hover .item-collections__description {
       left: 33px; }
     .item-collections__wrap:hover .item-collections__subcats {

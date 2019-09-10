@@ -1,6 +1,8 @@
 /* =pagination
 ---------------------------*/
-.pagination{ 
+.pagination,
+.wp-vgp-paging
+{ 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	margin: 22px 0 30px;
@@ -51,3 +53,35 @@
 }
 /* =/pagination
 ---------------------------*/
+
+div.wp-vgp-paging{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.page-numbers{
+		background: none;
+		border: none !important;
+		padding: 0 !important;
+		color: #020000 !important;
+		font-size: 16px;
+		margin: 0 20px;
+		&.current{
+			color: $color3 !important;
+			margin: 0 20px;
+			font-size: 16px;
+		}
+		&.prev,
+		&.next{
+			background: url(images/left-arrow.png) no-repeat;
+			height: 12px;
+			margin: 0 35px;
+			text-indent: -999em;
+			width: 7px;
+			min-width: 0;
+		}
+
+		&.next{
+			transform: rotate(180deg);
+		}
+	}
+}

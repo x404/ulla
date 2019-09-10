@@ -30,6 +30,18 @@
 		}
 	}
 
+
+	.seo-text{
+		.text{
+			h1, 
+			h2{
+				font-size: 30px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+
 	.footer{
 		.bottom-menu{
 			padding-left: 0;
@@ -125,6 +137,7 @@
 			display: block;
 			width: 250px;
 			img{
+				height: auto;
 				max-width: 100%
 			}
 		}
@@ -161,6 +174,16 @@
 		}
 		h6{
 			font-size: 13px;
+		}
+	}
+
+	.seo-text{
+		.text{
+			h1, 
+			h2{
+				font-size: 22px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 }

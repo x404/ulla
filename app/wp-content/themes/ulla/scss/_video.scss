@@ -1,23 +1,31 @@
 .video{
 	margin: 30px 0 -40px;
-	&__list{
-		grid-template-columns: repeat(3, 260px);
-		grid-column-gap: 19px;
-
-		@media (max-width: 1540px){
-			grid-template-columns: repeat(3, 250px);
-		}
-
-		@media (max-width: 1399px){
-			grid-template-columns: repeat(2, 260px);
-		}
-
-		@media (max-width: 1250px){
-			grid-template-columns: repeat(3, 210px);
-		}
+	&__list,
+	.wp-vgp-video-grid-wrp{
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
+
+.video{
+	.wp-vgp-video-grid-wrp{
+		@media (max-width: 1399px){
+			.wp-vgp-medium-4{
+				width: 50%;
+			}
+		}
+		@media (max-width: 560px){
+			display: block !important;
+			.wp-vgp-medium-4{
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+				width: 280px;
+			}
+		}
+	}
+}
 .video-page{
 	@media (max-width: 767px){
 		#selectmenu{
@@ -27,7 +35,8 @@
 	}
 }
 
-.video__item{
+.video__item,
+.wp-vgp-video-wrap{
 	margin-bottom: 40px;
 	@media (max-width: 991px){
 		width: 48%;
@@ -89,5 +98,72 @@
 		&__title{
 			margin: 10px 0;
 		}
+	}
+}
+
+.wp-vgp-design-1{
+	.wp-vgp-video-image-frame{
+		border: none !important;
+		box-shadow: none !important;
+		width: 260px;
+		height: 150px !important;
+		margin-left: auto;
+		margin-right: auto;
+		img{
+			border: 3px solid rgba(255,255,255,0);
+			transition: border-color .3s;
+			max-width: 100%;
+			object-fit: fill;
+		}
+
+		&-wrap{
+			.wp-vgp-video-title{
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			&:hover{
+				color: $color4;
+				.wp-vgp-video-image-frame{
+					img{
+						border-color: $color3;
+					}
+				}
+				.wp-vgp-video-icon{
+					background-color: $color3;
+				}
+			}
+		}
+
+		@media (max-width: 1500px){
+			width: 245px;
+		}
+		@media (max-width: 767px){
+			width: 100%;
+		}
+	}
+
+	.wp-vgp-video-wrap{
+		padding-bottom: 0;
+	}
+}
+
+.wp-vgp-clearfix::after, .wp-vgp-clearfix::before{
+	display: none !important;
+}
+
+
+.wp-vgp-video-grid-wrp{
+	grid-row-gap: 0;
+	grid-column-gap: 0;
+}
+
+.wp-vgp-video-title{
+	font-size: 18px;
+}
+
+@media (max-width: 767px){
+	.wp-vgp-design-1 .wp-vgp-video-wrap{
+		margin-bottom: 15px;
+		padding-bottom: 0;
 	}
 }

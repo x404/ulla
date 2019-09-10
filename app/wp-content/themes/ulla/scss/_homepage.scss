@@ -53,18 +53,12 @@
 		a:hover{
 			color: #000;
 		}
+
+		@media (min-width: 1600px){
+			min-height: 337px;
+			background-color: #ccc;
+		}
 	}
-
-
-	// &__link{
-	// 	display: block;
-	// 	position: relative;
-	// 	z-index: 4;
-	// 	&:hover{
-	// 		color: #000;
-	// 	}
-	// }
-
 
 	img{
 		display: block;
@@ -122,6 +116,9 @@
 			margin: 5px 0;
 		}
 		a{
+			&:first-letter{
+				text-transform: uppercase;
+			}
 			@extend .tdu;
 			display: inline-block;
 			font-size: 16px;

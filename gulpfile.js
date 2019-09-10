@@ -21,6 +21,7 @@ var gulp 		= require('gulp'),
 
 var config = {
 	templateDir : 'app/wp-content/themes/ulla',
+	wptheme : '../www/wp-content/themes/ulla',
 	destTemplateDir : 'dist/wp-content/themes/ulla',
 	destDir : 'dist',
 	libsDir : 'app/libs'
@@ -31,7 +32,8 @@ var config = {
 gulp.task('scss', function(){
 	return gulp.src(config.templateDir + '/scss/**/*.scss') // Берем источник
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-		.pipe(gulp.dest(config.templateDir + '/'))  // Выгружаем результата в папку app/css
+		.pipe(gulp.dest(config.wptheme + '/'))  // Выгружаем результата в папку app/css
+		// .pipe(gulp.dest(config.templateDir + '/'))  // Выгружаем результата в папку app/css
 });
 
 
@@ -40,7 +42,8 @@ gulp.task('css-libs', ['scss'],  function(){
 	return gulp.src(config.templateDir + '/style.css') // Выбираем файл для минификации
 		.pipe(cleancss())  // Сжимаем
 		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
-		.pipe(gulp.dest(config.templateDir + '/')) // Выгружаем в папку app/css
+		// .pipe(gulp.dest(config.templateDir + '/')) // Выгружаем в папку app/css
+		.pipe(gulp.dest(config.wptheme + '/')) // Выгружаем в папку app/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 })
 
